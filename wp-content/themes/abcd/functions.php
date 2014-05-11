@@ -475,10 +475,16 @@ if( !function_exists( "theme_js" ) ) {
       get_template_directory_uri() . '/library/js/modernizr.full.min.js', 
       array('jquery'), 
       '1.2' );
+
+    wp_register_script(  'flexmenu', 
+      get_template_directory_uri() . '/library/js/jquery.flexmenu.js', 
+      array('jquery'), 
+      '1.2' );
   
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('wpbs-scripts');
     wp_enqueue_script('modernizr');
+    wp_enqueue_script('flexmenu');
     
   }
 }

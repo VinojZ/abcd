@@ -31,7 +31,13 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
-
+		 <script>
+		    (function($){
+		      $('header .menu').flexMenu({
+		        responsivePattern: 'off-canvas'
+		      });
+		    })(jQuery);
+  		</script>
 	</body>
 
 </html>
