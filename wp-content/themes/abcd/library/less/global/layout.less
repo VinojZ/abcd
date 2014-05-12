@@ -1,1 +1,27 @@
 // Layout
+
+body {
+	padding-top: 0;
+}
+
+header[role='banner'] {
+	.container;
+}
+
+.main-menus {
+	.make-row;
+}
+
+.site-header {
+	.make-xs-column(3);
+	@media(max-width: @screen-phone) {
+		.pull-right;
+	}
+	.make-lg-column(3);
+	
+}
+
+.fm-button {
+	.make-xs-column(2);
+	.make-lg-column(0);
+}

@@ -31,11 +31,13 @@
 	</head>
 	
 	<body <?php body_class(); ?>>
-				
 		<header role="banner">
-				
-			<div class="fm-container">
+
+			<div class="fm-container main-menus">
 				<div class="fm-button"><span class="fm-bar"></span><span class="fm-bar"></span><span class="fm-bar"></span></div>
+				<div class="site-header">
+					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
+				</div>
 				<div class="menu">
 					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 				</div>
