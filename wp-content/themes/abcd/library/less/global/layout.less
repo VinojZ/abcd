@@ -4,6 +4,12 @@ body {
 	padding-top: 0;
 }
 
+.wrapper {
+	.make-row;
+}
+
+// Header 
+
 header[role='banner'] {
 	.container;
 }
@@ -24,4 +30,31 @@ header[role='banner'] {
 .fm-button {
 	.make-xs-column(2);
 	.make-lg-column(0);
+}
+
+// ---- HOMEPAGE ---------------/
+
+// Image Container
+
+.image-panel {
+	.make-xs-column(12);
+}
+
+// Company Culture
+
+.company-culture {
+	.make-row;
+
+	.about-abcd {
+		.make-md-column(8);
+	}
+
+	.mailing-list {
+		.make-md-column(4);
+	}
+}
+
+.box { // please refer to mixins.less
+	.make-xs-column(12);
+	.make-md-column(4);
 }

@@ -41,7 +41,6 @@
 				<div class="menu">
 					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
 				</div>
-
 			</div> <!-- end .fm-container -->
 		
 		</header> <!-- end header -->
