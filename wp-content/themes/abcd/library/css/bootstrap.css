@@ -7255,18 +7255,62 @@ header[role='banner']:after {
 }
 .fm-button {
   border: 1px solid #da2430;
+  height: 40px;
+  margin: 0;
+  padding: 11px 0 0 0;
+  text-align: center;
+  width: 60px;
 }
 .fm-button:hover {
   background-color: #da2430;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
 }
 .fm-button:hover .fm-bar {
   background-color: white;
 }
 .fm-button .fm-bar {
   background-color: #da2430;
+  height: 3px;
+  margin: 0 auto;
+  width: 34px;
+}
+.flexmenu.fm-offcanvas.fm-sm {
+  background: #6c6c6c;
+}
+.main-menus {
+  padding: 20px 15px;
 }
 .site-header {
   padding-top: 15px;
+}
+.site-header {
+  height: 89px;
+  padding: 0;
+  width: 237px;
+}
+.site-header a {
+  background: url('../img/abcd-global-logo.jpg') no-repeat;
+  display: block;
+  height: inherit;
+  width: inherit;
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+@media (max-width: 768px) {
+  .site-header a {
+    background: url('../img/abcd-global-logo-light.jpg') no-repeat;
+  }
+}
+@media (max-width: 768px) {
+  .site-header {
+    float: right;
+    height: 40px;
+    width: 107px;
+  }
 }
 .image-panel img {
   display: block;
