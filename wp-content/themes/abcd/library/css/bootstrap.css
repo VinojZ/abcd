@@ -7234,6 +7234,15 @@ header[role='banner']:after {
     width: 33.33333333%;
   }
 }
+.meet-the-team .member,
+.meet-the-team .meet-the-leadership {
+  position: relative;
+  float: left;
+  width: 83.33333333%;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .box h3 {
   margin-bottom: 30px;
 }
@@ -7305,4 +7314,12 @@ header[role='banner']:after {
 .performance .learn-more,
 .product .learn-more {
   border-radius: 3px;
+}
+.meet-the-team {
+  padding-left: 10px;
+}
+.member img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }

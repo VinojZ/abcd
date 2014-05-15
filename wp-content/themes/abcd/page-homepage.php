@@ -24,8 +24,7 @@ Template Name: Homepage
 				<h3>People</h3>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero. Morbi iaculis, neque id malesuada porttitor, diam lacus elementum dolor, at scelerisque leo leo lobortis nisi. 
 				<a class="learn-more" href="#">Learn More</a>
-			</div>
-			
+			</div>	
 			<div class="performance">
 				<h3>Performance</h3>
 				Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero. Morbi iaculis, neque id malesuada porttitor, diam lacus elementum dolor, at scelerisque leo leo lobortis nisi.
@@ -39,6 +38,21 @@ Template Name: Homepage
 		</div><!-- end .beliefs -->
 	</section><!-- end .company-culture -->
 	<section class="meet-the-team">
+		<div class="meet-the-leadership">
+			<h1>Meet the Leadership</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero. Morbi iaculis, neque id malesuada porttitor, diam lacus elementum dolor, at scelerisque leo leo lobortis nisi.</p>
+		</div><!-- end .meet-the-leadership -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Amber Dozier Managing Partner</p>
+			<p>Policy &amp; Compliance</p>
+		</div><!-- end .member -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Brittanye Calhoun Managing Partner</p>
+			<p>Innovation &amp; Design</p>
+		</div><!-- end .member -->
+		
 	</section>
 	<section class="industries">
 	</section>

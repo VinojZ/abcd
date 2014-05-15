@@ -4822,6 +4822,26 @@
 		"strictMath": 0,
 		"strictUnits": 0
 		},
+	"\/wp-content\/themes\/abcd\/library\/less\/modules\/meet-the-team.less": {
+		"allowInsecureImports": 0,
+		"createSourceMap": 0,
+		"disableJavascript": 0,
+		"fileType": 1,
+		"ieCompatibility": 1,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/wp-content\/themes\/abcd\/library\/less\/modules\/meet-the-team.less",
+		"outputAbbreviatedPath": "\/wp-content\/themes\/abcd\/library\/less\/css\/meet-the-team.css",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"relativeURLS": 0,
+		"shouldRunAutoprefixer": 0,
+		"shouldRunBless": 0,
+		"strictImports": 0,
+		"strictMath": 0,
+		"strictUnits": 0
+		},
 	"\/wp-content\/themes\/abcd\/library\/less\/partials\/alerts.less": {
 		"allowInsecureImports": 0,
 		"createSourceMap": 0,
@@ -11770,7 +11790,7 @@
 	},
 "hooks": [
 	],
-"lastSavedByUser": "Vinoj",
+"lastSavedByUser": "Anisha",
 "manualImportLinks": {
 	},
 "projectAttributes": {
