@@ -39,7 +39,21 @@ Template Name: Homepage
 		</div><!-- end .beliefs -->
 	</section><!-- end .company-culture -->
 	<section class="meet-the-team">
-	</section>
+		<div class="meet-the-leadership">
+			<h1>Meet the Leadership</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing el</p>
+        </div><!-- end .meet-the-leadership -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Amber Dozier Managing Partner</p>
+			<p>Policy &amp; Compliance</p>
+		</div><!-- end .member -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Brittanye Calhoun Managing Partner</p>
+			<p>Innovation &amp; Design</p>
+		</div><!-- end .member -->               
+	</section><!-- end .meet-the-team -->
 	<section class="industries">
 	</section>
 	<section class="services">
