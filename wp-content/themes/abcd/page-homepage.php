@@ -68,13 +68,17 @@ Template Name: Homepage
 	<section class="get-started">
 	</section>
 	<script>
-	jQuery.noConflict();
-  	$(function () {
-    	$('#tabs a').click(function (e) {
-    		e.preventDefault();
-    	$(this).tab('show');
-    	})
-  	})
+	  	(function($){
+			$('#tabs a').click(function (e) {
+				e.preventDefault();
+				$(this).tab('show');
+			});
+			
+			if (screen.width > 480) {
+				$('.tab-content').removeClass().addClass('wrapper');
+			}
+
+		})(jQuery);
 	</script>
 
 <?php get_footer(); ?>

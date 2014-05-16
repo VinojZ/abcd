@@ -1,6 +1,13 @@
 // Meet the Team
 
-
 .people, .performance, .product {
-	.box; // coming from mixins.less
+	.box
+}
+
+.beliefs {
+	@media(min-width: @screen-tablet) {
+		.nav-pills {
+			display: none;
+		}
+	}
 }
