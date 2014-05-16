@@ -6,9 +6,7 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 	<div class="image-panel">
-		<div class="wrapper">
-			<img src="http://placehold.it/1170x370">
-		</div>
+		<img src="http://placehold.it/1170x370">
 	</div>
 	<section class="company-culture">
 		<div class="about-abcd">
@@ -46,9 +44,9 @@ Template Name: Homepage
 		</div><!-- end .beliefs -->
 	</section><!-- end .company-culture -->
 	<section class="meet-the-team">
-		<div class="meet-the-leadership">
-			<h1>Meet the Leadership</h1>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing el</p>
+		<div class="description">
+			<h2>Meet the Leadership</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
         </div><!-- end .meet-the-leadership -->
 		<div class="member">
 			<img src="http://placehold.it/330x268">
@@ -62,7 +60,41 @@ Template Name: Homepage
 		</div><!-- end .member -->               
 	</section><!-- end .meet-the-team -->
 	<section class="industries">
-	</section>
+		<div class="description">
+			<h2>Industries</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing.</p>
+		</div>
+		<div class="industry">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="industry">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="industry">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="industry">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="industry">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="industry">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+	</section><!-- end .industries -->
 	<section class="services">
 	</section>
 	<section class="get-started">
@@ -75,7 +107,7 @@ Template Name: Homepage
 			});
 			
 			if (screen.width > 480) {
-				$('.tab-content').removeClass().addClass('wrapper');
+				$('.tab-content').removeClass().addClass('row');
 			}
 
 		})(jQuery);

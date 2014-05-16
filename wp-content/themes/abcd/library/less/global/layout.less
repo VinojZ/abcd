@@ -4,10 +4,9 @@ body {
 	padding-top: 0;
 }
 
-.wrapper {
+section {
 	.make-row;
 }
-
 // Header 
 
 header[role='banner'] {
@@ -37,13 +36,12 @@ header[role='banner'] {
 // Image Container
 
 .image-panel {
-	.make-xs-column(12);
+	//.make-xs-column(12);
 }
 
 // Company Culture
 
 .company-culture {
-	.make-row;
 
 	.about-abcd {
 		.make-md-column(8);
@@ -58,13 +56,27 @@ header[role='banner'] {
 	.make-xs-column(12);
 }
 
-.box { // please refer to mixins.less
-	.make-xs-column(12);
+.tab-pane { 
 	.make-md-column(4);
 }
 
 .meet-the-team {
-	.member, .meet-the-leadership {
-		.make-xs-column(10);
+	.member {
+		.make-xs-column(12);
 	}
+}
+
+.description {
+	.make-md-column(12);
+	.make-xs-column(10);
+}
+
+// Industries
+
+.industries {
+
+	.industry {
+		.make-md-column(3);
+	}
+
 }
