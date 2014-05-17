@@ -1,4 +1,10 @@
 // Body
+// This file is for global styles that don't belong in one 
+// namespaced .less file for another section
+
+body {
+	padding-top: 0;
+}
 
 img {
 	.img-responsive;
@@ -10,7 +16,12 @@ img {
 	}
 }
 
-.button {
-	.btn;
-	.btn-success;
+.call-to-action {
+	text-align: center;
+	
+	.button {
+		display: block;
+		margin: 0 auto;
+		width: 110px;
+	}
 }

@@ -50,13 +50,33 @@ Template Name: Homepage
         </div><!-- end .meet-the-leadership -->
 		<div class="member">
 			<img src="http://placehold.it/330x268">
-			<p>Amber Dozier Managing Partner</p>
-			<p>Policy &amp; Compliance</p>
+			<p>Lorem ipsum dolor sit</p>
+			<p>Proin &amp; Aenean</p>
 		</div><!-- end .member -->
 		<div class="member">
 			<img src="http://placehold.it/330x268">
-			<p>Brittanye Calhoun Managing Partner</p>
-			<p>Innovation &amp; Design</p>
+			<p>Lorem ipsum dolor sit</p>
+			<p>Proin &amp; Aenean</p>
+		</div><!-- end .member -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem ipsum dolor sit</p>
+			<p>Proin &amp; Aenean</p>
+		</div><!-- end .member -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem ipsum dolor sit</p>
+			<p>Proin &amp; Aenean</p>
+		</div><!-- end .member -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem ipsum dolor sit</p>
+			<p>Proin &amp; Aenean</p>
+		</div><!-- end .member -->
+		<div class="member">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem ipsum dolor sit</p>
+			<p>Proin &amp; Aenean</p>
 		</div><!-- end .member -->
 		<div class="call-to-action">
 			<h5>Lorem ipsum dolor sit</h5>
@@ -106,9 +126,53 @@ Template Name: Homepage
 		</div><!-- end .cta -->
 	</section><!-- end .industries -->
 	<section class="services">
-	</section>
+			<div class="description">
+			<h2>Services</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare arcu venenatis felis condimentum, id commodo nisl malesuada. Proin varius lectus vitae odio mattis feugiat. Ut quis massa neque. Aenean neque turpis, dignissim non condimentum sed.</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+		<div class="service">
+			<img src="http://placehold.it/330x268">
+			<p>Lorem Ipsum Dolor Sit Amet</p>
+			<p>Consectetur adipiscing</p>
+		</div>
+	</section><!-- end .services -->
 	<section class="get-started">
-	</section>
+		<div class="call-to-action">
+			<h5>Lorem ipsum dolor sit</h5>
+			<h6>Quisque ornare arcu venenatis felis condimentum</h6>
+			<a class="button" href="#">Call to Action</a>
+		</div><!-- end .cta -->
+	</section><!-- end .get-started -->
 	<script>
 	  	(function($){
 			$('#tabs a').click(function (e) {

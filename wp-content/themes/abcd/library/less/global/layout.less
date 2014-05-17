@@ -1,12 +1,9 @@
 // Layout
 
-body {
-	padding-top: 0;
-}
-
 section {
 	.make-row;
 }
+
 // Header 
 
 header[role='banner'] {
@@ -33,6 +30,24 @@ header[role='banner'] {
 
 // ---- HOMEPAGE ---------------/
 
+// Global
+
+.description {
+	.make-md-column(12);
+	.make-xs-column(10);
+}
+
+.unit {
+	.make-xs-column(12);
+	.make-md-column(4);
+}
+
+
+.call-to-action {
+	.make-xs-column(12);
+	.make-md-column(12);
+}
+
 // Company Culture
 
 .company-culture {
@@ -54,28 +69,10 @@ header[role='banner'] {
 	.make-md-column(4);
 }
 
-.meet-the-team {
-	.member {
-		.make-xs-column(12);
-	}
-}
+// Units
 
-.call-to-action {
-	.make-xs-column(12);
-}
-
-
-.description {
-	.make-md-column(12);
-	.make-xs-column(10);
-}
-
-// Industries
-
-.industries {
-
-	.industry {
-		.make-md-column(3);
-	}
-
+.member,
+.industry,
+.service {
+	.unit;
 }
