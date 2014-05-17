@@ -1,4 +1,4 @@
-			<footer role="contentinfo">
+			<footer role="contentinfo" class="footer">
 			
 				<div id="inner-footer" class="clearfix">
 		          <hr />
@@ -11,14 +11,13 @@
 		            <?php endif; ?>
 		          </div>
 					
-					<nav class="clearfix">
+					<nav>
+						<h3>Industries</h3>
 						<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
 					</nav>
-					
-					<p class="pull-right"><a href="http://320press.com" id="credit320" title="By the dudes of 320press">320press</a></p>
-			
-					<p class="attribution">&copy; <?php bloginfo('name'); ?></p>
-				
+					<div class="latest-tweet">
+						We proudly announce our new website launch; please visit <a href="#">The ABCD Company</a>
+					</div><!-- Chris, please add whichever plugin you'd like that's easiest to style -->
 				</div> <!-- end #inner-footer -->
 				
 			</footer> <!-- end footer -->
