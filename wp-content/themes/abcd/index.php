@@ -9,27 +9,26 @@
 			$args = array( 'posts_per_page' => 1);
 			$myposts = get_posts( $args );
 			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 				<p><?php the_excerpt(); ?></p>
+				<a href="<?php the_permalink(); ?>" class="read-more" title="<?php the_title(); ?>">Read more</a>
 			<?php endforeach; 
 				wp_reset_postdata();
 		?>
 	</article>
 </section>
 <section class="more-reading">
-	<ul>
 		<?php
-			$args = array( 'posts_per_page' => 5, 'offset'=> 2);
+			$args = array( 'posts_per_page' => 6, 'offset'=> 2);
 			$myposts = get_posts( $args );
 			foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-			<li>
-				<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-				<p><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>">Read more</a>
-			</li>
+				<article>
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<p><?php the_excerpt(); ?></p>
+					<a href="<?php the_permalink(); ?>" class="read-more" title="<?php the_title(); ?>">Read more</a>
+				</article>
 			<?php endforeach; 
 				wp_reset_postdata();
 		?>
-	</ul>
 </section>
 <?php get_footer(); ?>

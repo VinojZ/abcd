@@ -9,3 +9,32 @@
 	}
 
 }
+
+.more-reading {
+
+	ul {
+		padding: 0;
+		list-style: none;
+	}
+
+	article {
+		@media (min-width: @screen-tablet) {
+			min-height: 360px;
+			
+			&:first-child, &:nth-child(4) {
+				padding-left: 0;
+			}
+
+			&:nth-child(3n) {
+				padding-right: 0;
+			}
+		}
+	}
+}
+
+.blog {
+
+	section {
+		padding: 30px 0;
+	}
+}
