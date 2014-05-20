@@ -9,12 +9,15 @@
 		$myposts = get_posts( $args );
 		foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 		<?php
-			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(360,360 ), false, '' );
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(1170,770 ), false, '' );
 		?>
 		<article style="background-image: url(<?php echo $src[0]; ?> );">
-			<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-			<p><?php the_excerpt(); ?></p>
-			<a href="<?php the_permalink(); ?>" class="read-more" title="<?php the_title(); ?>">Read more</a>
+			<div class="darken"></div>
+			<div class="article-info">
+				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+				<p><?php the_excerpt(); ?></p>
+				<a href="<?php the_permalink(); ?>" class="read-more" title="<?php the_title(); ?>">Read more</a>
+			</div><!-- end .article-info -->
 		</article>
 		<?php endforeach; 
 			wp_reset_postdata();
@@ -27,12 +30,15 @@
 		$myposts = get_posts( $args );
 		foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
 		<?php
-			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(360,360 ), false, '' );
+			$src = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), array(390,390 ), false, '' );
 		?>
 			<article style="background-image: url(<?php echo $src[0]; ?> );">
-				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-				<p><?php the_excerpt(); ?></p>
-				<a href="<?php the_permalink(); ?>" class="read-more" title="<?php the_title(); ?>">Read more</a>
+				<div class="darken"></div>
+				<div class="article-info">
+					<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+					<p><?php the_excerpt(); ?></p>
+					<a href="<?php the_permalink(); ?>" class="read-more" title="<?php the_title(); ?>">Read more</a>
+				</div><!-- end .article-info -->
 			</article>	
 		<?php endforeach; 
 			wp_reset_postdata();

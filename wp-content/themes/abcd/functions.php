@@ -35,7 +35,8 @@ if ( ! isset( $content_width ) ) $content_width = 580;
 add_image_size( 'wpbs-featured', 780, 300, true );
 add_image_size( 'wpbs-featured-home', 970, 311, true);
 add_image_size( 'wpbs-featured-carousel', 970, 400, true);
-add_image_size( 'abcd-article-image', 360, 360, true);
+add_image_size( 'abcd-article-leader', 1170, 770, true);
+add_image_size( 'abcd-article-image', 390, 390, true);
 
 /* 
 to add more sizes, simply copy a line from above 
