@@ -1,7 +1,9 @@
 // Layout
 
-section {
-	.make-row;
+.home {
+	section {
+		.make-row;
+	}
 }
 
 // Header 
@@ -123,5 +125,25 @@ header[role='banner'] {
 	article {
 		.make-xs-column(12);
 		.make-md-column(4);
+	}
+}
+
+// Article (page.php)
+
+.main-content {
+	.make-row;
+
+	article, .comments {
+		.make-xs-column(12)
+	}
+
+	.category {
+		.make-xs-column(6);
+		.make-md-column(8);
+	}
+
+	.logo {
+		.make-xs-column(6);
+		.make-md-column(2);
 	}
 }
