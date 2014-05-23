@@ -8,7 +8,7 @@ Template Name: Homepage
 	<div class="image-panel">
 		<img src="http://placehold.it/1170x370">
 	</div>
-	<section class="company-culture">
+	<section class="company-culture" id="company-culture">
 		<div class="about-abcd">
 			<p>ABCD &amp; Company is a business management-consulting firm that specializes in business start-up, business operations, and business expansion.  We work across industries empowering companies and individuals to become recognized as top performers in their field. We are committed to a standard of excellence driven by people, performance, and product.</p>
 		</div>
@@ -43,7 +43,7 @@ Template Name: Homepage
 			</div><!-- end .tab-content -->
 		</div><!-- end .beliefs -->
 	</section><!-- end .company-culture -->
-	<section class="meet-the-team">
+	<section class="meet-the-team" id="meet-the-leadership">
 		<div class="description">
 			<h2>Meet the Leadership</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare arcu venenatis felis condimentum, id commodo nisl malesuada. Proin varius lectus vitae odio mattis feugiat. Ut quis massa neque. Aenean neque turpis, dignissim non condimentum sed.</p>
@@ -84,7 +84,7 @@ Template Name: Homepage
 			<a class="button" href="#">Call to Action</a>
 		</div><!-- end .cta -->               
 	</section><!-- end .meet-the-team -->
-	<section class="industries">
+	<section class="industries" id="industries">
 		<div class="description">
 			<h2>Industries</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare arcu venenatis felis condimentum, id commodo nisl malesuada. Proin varius lectus vitae odio mattis feugiat. Ut quis massa neque. Aenean neque turpis, dignissim non condimentum sed.</p>
@@ -125,7 +125,7 @@ Template Name: Homepage
 			<a class="button" href="#">Call to Action</a>
 		</div><!-- end .cta -->
 	</section><!-- end .industries -->
-	<section class="services">
+	<section class="services" id="services">
 			<div class="description">
 			<h2>Services</h2>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare arcu venenatis felis condimentum, id commodo nisl malesuada. Proin varius lectus vitae odio mattis feugiat. Ut quis massa neque. Aenean neque turpis, dignissim non condimentum sed.</p>
@@ -166,7 +166,7 @@ Template Name: Homepage
 			<p>Consectetur adipiscing</p>
 		</div>
 	</section><!-- end .services -->
-	<section class="get-started">
+	<section class="get-started" id="get-started">
 		<div class="call-to-action">
 			<h5>Lorem ipsum dolor sit</h5>
 			<h6>Quisque ornare arcu venenatis felis condimentum</h6>
