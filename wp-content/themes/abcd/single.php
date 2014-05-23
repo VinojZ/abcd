@@ -61,6 +61,14 @@
 
 	<?php endif; ?>
 
+	<section class="get-started call-to-action">
+		<div class="description">
+			<h3>Get started with ABCD today</h3>
+			<p>Your pathway to success begins here</p>
+		</div>
+		<a class="button" href="#">Contact Us</a>
+	</section><!-- end .get-started -->
+
 </main><!-- end .main-content -->
 
 <?php get_footer(); ?>
