@@ -11,23 +11,35 @@ img {
 .call-to-action {
 	padding: 20px 0;
 	text-align: center;
-	.button {
-		display: inline-block;
-		margin: 0 auto;
-		.btn;
-		.btn-green;
-	}
 	h5 {
-		color: @color-grey;
 		font-size: 24px;
 		margin: 0 0 5px 0;
 	}
 	h6 {
-		color: @color-grey;
 		font-size: 14px;
 		margin: 0 0 20px;
 	}
 }
+.call-to-action-solo {
+	padding: 0;
+}
+.call-to-action-light {
+	h5 {
+		color: @color-grey;
+	}
+	h6 {
+		color: @color-grey;
+	}
+}
+.call-to-action-dark {
+	h5 {
+		color: @color-white;
+	}
+	h6 {
+		color: @color-white;
+	}
+}
+
 .company-culture > div {
 	@media (max-width: @screen-phone) {
 		// padding-bottom: 10px;
