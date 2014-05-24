@@ -180,9 +180,13 @@ Template Name: Homepage
 				$(this).tab('show');
 			});
 			
+			// Remove tabbed menu once at sizes larger than mobile
+
 			if (screen.width > 480) {
 				$('.tab-content').removeClass().addClass('row');
 			}
+
+			// Scrolling 
 
 			$('a[href*=#]:not([href=#])').click(function() {
     			if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
@@ -193,12 +197,11 @@ Template Name: Homepage
           				scrollTop: target.offset().top
         			}, 1000);
         			return false;
+      				}
       			}
-      		}
-
-  		});
-
+  			});
 		})(jQuery);
+
 	</script>
 
 <?php get_footer(); ?>
