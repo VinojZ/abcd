@@ -1,0 +1,111 @@
+// Meet the Team
+
+.beliefs {
+	background: @color-red;
+	margin: 20px 0 0;
+	padding: 0;
+	padding-bottom: 0;
+	.learn-more {
+		.btn;
+		.btn-blue;
+		margin: 10px 0;
+	}
+	@media(max-width: @screen-phone) {
+		.nav {
+			background: @color-darkRed;
+			margin: 0;
+			li {
+				margin: 0;
+				&.active {
+					a {
+						background: @color-red;
+					}
+				}
+			}
+			a {
+				background: @color-darkRed;
+				border-radius: 0;
+				color: @color-white;
+				font-weight: 700;
+				&:hover {
+					background: @color-red;
+				}
+			}
+		}
+		.row {
+			background: @color-red;
+		}
+		.tab-pane {
+			display: none;
+			padding: 20px 45px;
+			overflow: hidden;
+			h3 {
+				margin: 0 0 10px 0;
+			}
+			&.active {
+				display: block;
+			}
+		}
+		.tab-content {
+			margin-left: -15px;
+		}
+	}
+
+	@media(min-width: @screen-tablet) {
+		.nav-pills {
+			display: none;
+		}
+	}
+}
+
+.company-culture {
+	background: @color-darkGrey;
+	color: @color-white;
+	.padding-section;
+	.no-padding-bottom;
+	.typeSerifSmall();
+	text-align: center;
+}
+
+.mailing-list {
+	text-align: left;
+	h2 {
+		color: @color-red;
+		font-size: 24px;
+		font-weight: bold;
+		.typeSansSerifHeader;
+	}
+	br {
+		display: none;
+	}
+	.wp-email-capture-name {
+		@media (max-width: @screen-phone) {
+			display: none;
+		}
+	}
+	.wp-email-capture-email-label {
+		.typeSansSerifSmall;
+		@media (max-width: @screen-phone) {
+			color: #ccc;
+			display: block;
+			font-size: 12px;
+			font-weight: bold;
+			margin: 0;
+		}
+	}
+	.wp-email-capture-input {
+		background: @color-red;
+		border: 0;
+		color: @color-white;
+		padding: 5px 10px;
+		@media (max-width: @screen-phone) {
+			width: 100%;
+		}
+	}
+	.wp-email-capture-submit {
+		.btn;
+		.btn-darkGreen;
+		margin: 10px 0 0 0;
+		width: 140px;
+	}
+}

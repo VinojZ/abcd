@@ -6,7 +6,7 @@ Template Name: Homepage
 
 <?php get_header(); ?>
 	<div class="image-panel">
-		<img src="http://placehold.it/1170x370">
+		<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-home-hero-small.jpg" alt="ABCD Group">
 	</div>
 	<section class="company-culture" id="company-culture">
 		<div class="about-abcd">
@@ -14,7 +14,7 @@ Template Name: Homepage
 		</div>
 		<div class="mailing-list">
 			<h2>Join our Mailing List</h2>
-			<p>Chris, you can fill in the plugin here</p>
+			<?php if (function_exists('wp_email_capture_form')) { wp_email_capture_form(); } ?>
 			<?//php get_sidebar(); // sidebar 1 -- use this to pull in a mailing list plugin ?>
 		</div>
 		<div class="beliefs">
@@ -26,18 +26,18 @@ Template Name: Homepage
 			<div class="tab-content">
 				<div class="people tab-pane active" id="people">
 					<h3>People</h3>
-					People are lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero. Morbi iaculis, neque id malesuada porttitor, diam lacus elementum dolor, at scelerisque leo leo lobortis nisi. 
+					<p>People are lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. </p>
 					<a class="learn-more" href="#">Learn More</a>
 				</div>
 				
 				<div class="performance tab-pane" id="performance">
 					<h3>Performance</h3>
-					Performance is adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero. Morbi iaculis, neque id malesuada porttitor, diam lacus elementum dolor, at scelerisque leo leo lobortis nisi.
+					<p>Performance is adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero.</p>
 					<a class="learn-more" href="#">Learn More</a> 
 				</div>
 				<div class="product tab-pane" id="product">
 					<h3>Product</h3>
-					Product was onsectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero. Morbi iaculis, neque id malesuada porttitor, diam lacus elementum dolor, at scelerisque leo leo lobortis nisi.
+					<p>Product was onsectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero.</p>
 					<a class="learn-more" href="#">Learn More</a> 
 				</div>
 			</div><!-- end .tab-content -->
@@ -45,43 +45,61 @@ Template Name: Homepage
 	</section><!-- end .company-culture -->
 	<section class="meet-the-team" id="meet-the-leadership">
 		<div class="description">
-			<h2>Meet the Leadership</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ornare arcu venenatis felis condimentum, id commodo nisl malesuada. Proin varius lectus vitae odio mattis feugiat. Ut quis massa neque. Aenean neque turpis, dignissim non condimentum sed.</p>
+			<h2>Meet the Team</h2>
+			<p>Our leadership team is comprised of talented and highly respected industry leaders across various disciplines. At ABCD & Company, we believe in leaders who take a hands-on approach and have the pulse of our clients and growing trends in our industries.</p>
         </div><!-- end .meet-the-leadership -->
 		<div class="member">
-			<img src="http://placehold.it/330x268">
-			<p>Lorem ipsum dolor sit</p>
-			<p>Proin &amp; Aenean</p>
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-team-fpo-small.jpg">
+			<p class="team-meta">
+				<span class="team-meta-name">Stephen Miller</span>
+				<span class="team-meta-title">Art Director</span>
+				<span class="team-meta-division">Innovation &amp; Design</span>
+			</p>
 		</div><!-- end .member -->
 		<div class="member">
-			<img src="http://placehold.it/330x268">
-			<p>Lorem ipsum dolor sit</p>
-			<p>Proin &amp; Aenean</p>
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-team-fpo-small.jpg">
+			<p class="team-meta">
+				<span class="team-meta-name">Stephen Miller</span>
+				<span class="team-meta-title">Art Director</span>
+				<span class="team-meta-division">Innovation &amp; Design</span>
+			</p>
 		</div><!-- end .member -->
 		<div class="member">
-			<img src="http://placehold.it/330x268">
-			<p>Lorem ipsum dolor sit</p>
-			<p>Proin &amp; Aenean</p>
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-team-fpo-small.jpg">
+			<p class="team-meta">
+				<span class="team-meta-name">Stephen Miller</span>
+				<span class="team-meta-title">Art Director</span>
+				<span class="team-meta-division">Innovation &amp; Design</span>
+			</p>
 		</div><!-- end .member -->
 		<div class="member">
-			<img src="http://placehold.it/330x268">
-			<p>Lorem ipsum dolor sit</p>
-			<p>Proin &amp; Aenean</p>
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-team-fpo-small.jpg">
+			<p class="team-meta">
+				<span class="team-meta-name">Stephen Miller</span>
+				<span class="team-meta-title">Art Director</span>
+				<span class="team-meta-division">Innovation &amp; Design</span>
+			</p>
 		</div><!-- end .member -->
 		<div class="member">
-			<img src="http://placehold.it/330x268">
-			<p>Lorem ipsum dolor sit</p>
-			<p>Proin &amp; Aenean</p>
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-team-fpo-small.jpg">
+			<p class="team-meta">
+				<span class="team-meta-name">Stephen Miller</span>
+				<span class="team-meta-title">Art Director</span>
+				<span class="team-meta-division">Innovation &amp; Design</span>
+			</p>
 		</div><!-- end .member -->
 		<div class="member">
-			<img src="http://placehold.it/330x268">
-			<p>Lorem ipsum dolor sit</p>
-			<p>Proin &amp; Aenean</p>
+			<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-team-fpo-small.jpg">
+			<p class="team-meta">
+				<span class="team-meta-name">Stephen Miller</span>
+				<span class="team-meta-title">Art Director</span>
+				<span class="team-meta-division">Innovation &amp; Design</span>
+			</p>
 		</div><!-- end .member -->
 		<div class="call-to-action">
-			<h5>Lorem ipsum dolor sit</h5>
-			<h6>Quisque ornare arcu venenatis felis condimentum</h6>
-			<a class="button" href="#">Call to Action</a>
+			<h5>We want the best</h5>
+			<h6>Great people make a great company</h6>
+			<a class="button" href="#">Join The Team</a>
 		</div><!-- end .cta -->               
 	</section><!-- end .meet-the-team -->
 	<section class="industries" id="industries">
@@ -91,33 +109,75 @@ Template Name: Homepage
 		</div>
 		<div class="industry">
 			<img src="http://placehold.it/330x268">
-			<p>Lorem Ipsum Dolor Sit Amet</p>
-			<p>Consectetur adipiscing</p>
+			<h3 class="industry-title">Higher Education</h3>
+			<ol class="industry-list">
+				<li class="industry-list-title">Services we provide</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+			</ol>
 		</div>
 		<div class="industry">
 			<img src="http://placehold.it/330x268">
-			<p>Lorem Ipsum Dolor Sit Amet</p>
-			<p>Consectetur adipiscing</p>
+			<h3 class="industry-title">Higher Education</h3>
+			<ol class="industry-list">
+				<li class="industry-list-title">Services we provide</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+			</ol>
 		</div>
 		<div class="industry">
 			<img src="http://placehold.it/330x268">
-			<p>Lorem Ipsum Dolor Sit Amet</p>
-			<p>Consectetur adipiscing</p>
+			<h3 class="industry-title">Higher Education</h3>
+			<ol class="industry-list">
+				<li class="industry-list-title">Services we provide</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+			</ol>
 		</div>
 		<div class="industry">
 			<img src="http://placehold.it/330x268">
-			<p>Lorem Ipsum Dolor Sit Amet</p>
-			<p>Consectetur adipiscing</p>
+			<h3 class="industry-title">Higher Education</h3>
+			<ol class="industry-list">
+				<li class="industry-list-title">Services we provide</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+			</ol>
 		</div>
 		<div class="industry">
 			<img src="http://placehold.it/330x268">
-			<p>Lorem Ipsum Dolor Sit Amet</p>
-			<p>Consectetur adipiscing</p>
+			<h3 class="industry-title">Higher Education</h3>
+			<ol class="industry-list">
+				<li class="industry-list-title">Services we provide</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+			</ol>
 		</div>
 		<div class="industry">
 			<img src="http://placehold.it/330x268">
-			<p>Lorem Ipsum Dolor Sit Amet</p>
-			<p>Consectetur adipiscing</p>
+			<h3 class="industry-title">Higher Education</h3>
+			<ol class="industry-list">
+				<li class="industry-list-title">Services we provide</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+				<li>Stakeholder Branding</li>
+			</ol>
 		</div>
 		<div class="call-to-action">
 			<h5>Lorem ipsum dolor sit</h5>
