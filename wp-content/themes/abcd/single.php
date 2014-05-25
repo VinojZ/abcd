@@ -5,7 +5,7 @@
 
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 		<div class="meta">
-			<div class="category">ABCD Institute &raquo; <?php the_category(', '); ?></div>
+			<div class="category"><a href="/the-abcd-institute" title="The ABCD Institute">&laquo; The ABCD Institute</a></div>
 			<div class="logo"><img src="http://placehold.it/130x60"></div>
 		</div>
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
@@ -43,7 +43,10 @@
 				
 			</footer> <!-- end article footer --> 
 		</article> <!-- end article -->
-		
+		<div class="other-articles">
+			<?php previous_post('&laquo; %', '', 'yes'); ?>
+			| <?php next_post('% &raquo; ', '', 'yes'); ?>
+		</div><!-- end .other-articles -->
 		<div class="comments">
 			<?php comments_template(); ?>
 		</div>
