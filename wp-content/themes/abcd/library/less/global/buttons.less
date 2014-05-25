@@ -7,6 +7,24 @@
 	width: 160px;
 }
 
+.btn-hallow {
+	background: transparent;
+	border-width: 2px;
+}
+.btn-hallow-white {
+	.btn-hallow;
+	border-color: @color-white;
+	color: @color-white;
+	.typeSerifMedium;
+	.btn-hover-red;
+}
+.btn-hover-red {
+	&:hover {
+		background: @color-red;
+		border-color: @color-red;
+		color: @color-white;
+	}
+}
 .btn-green {
 	background: @color-green;
 	color: lighten(@color-green,50%);

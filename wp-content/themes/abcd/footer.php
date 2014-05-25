@@ -10,13 +10,17 @@
 		            <?php endif; ?>
 		          </div>
 					
-					<nav>
-						<h3>Industries</h3>
-						<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+					<nav class="footer-nav">
+						<h3 class="footer-title typeSerifHeaderRed">Industries</h3>
+						<div class="footer-menu">
+							<?php wp_bootstrap_footer_links(); // Adjust using Menus in Wordpress Admin ?>
+						</div>
 					</nav>
-					<div class="latest-tweet">
-						We proudly announce our new website launch; please visit <a href="#">The ABCD Company</a>
-					</div><!-- Chris, please add whichever plugin you'd like that's easiest to style -->
+					<div class="icon-socialmedia-set">
+						<a href="#"><i class="icon icon-socialmedia icon-socialmedia-twitter">Twitter</i></a>
+						<a href="#"><i class="icon icon-socialmedia icon-socialmedia-instagram">Instagram</i></a>
+						<a href="#"><i class="icon icon-socialmedia icon-socialmedia-facebook">Facebook</i></a>
+					</div>
 				</div> <!-- end #inner-footer -->
 				
 			</footer> <!-- end footer -->

@@ -3,7 +3,7 @@
 // Global 
 
 .darken {
-	.opacity(.3);
+	.opacity(.5);
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -21,7 +21,6 @@
 // Namespaced 
 
 .blog {
-
 	article {
 		position: relative;
 		background-position: center center;
@@ -29,9 +28,50 @@
 	}
 }
 
+.blog-intro {
+	background: @color-red;
+	.padding-section;
+	text-align: center;
+}
+.blog-intro-logo {
+	background: url('../img/abcd-blog-intro-logo.png') no-repeat;
+	width: 192px;
+	height: 90px;
+	margin: 0 auto 20px;
+	.hide-text;
+}
+.blog-intro-description {
+	color: #fff;
+	.typeSerifSmall;
+}
 
 .latest-post {
-	
+	overflow: hidden;
+
+	article {
+		padding: 20px;
+		text-align: center;
+		background-size: cover;
+	}
+	.article-title {
+		a {
+			display: block;
+			padding: 10px 5px;
+			.typeSerifHeaderWhite;
+			&:hover {
+				text-decoration: none;
+				background: @color-red;
+			}
+		}
+	}
+	.article-excerpt {
+		.typeSerifSmall;
+		color: @color-white;
+	}
+	.article-readmore {
+		margin: 20px 0;
+	}
+
 	@media (min-width: @screen-tablet) {
 		
 		article {
