@@ -3,17 +3,27 @@
 
 <main class="main-content">
 
+
 	<?php if (have_posts()) : while (have_posts()) : the_post(); $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
 		<div class="breadcrumbs">
 			<a href="#" class="crumb-home">ABCD Institute</a>
 		</div>
+
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 			
 			<header>
+
 				<div class="post-image" style="background-image: url(<?php echo $featuredImage; ?>);">
 					
 				</div>
+
+				<!-- ShareThis plugin -->
+				<div class="social share-this">
+					<span class='st_facebook' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+					<span st_via='something' st_username='something' class='st_twitter' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+				</div><!-- end .social.share-this -->
+
 				<div class="page-header">
 					<h1 class="post-title" itemprop="headline">
 						<?php the_title(); ?>
@@ -45,8 +55,15 @@
 				
 			</footer> <!-- end article footer --> 
 		</article> <!-- end article -->
+
 		
 		<div class="post-comments">
+
+		<div class="other-articles">
+			<?php previous_post('&laquo; %', '', 'yes'); ?>
+			| <?php next_post('% &raquo; ', '', 'yes'); ?>
+		</div><!-- end .other-articles -->
+		<div class="comments">
 			<?php comments_template(); ?>
 		</div>
 
@@ -77,5 +94,11 @@
 	</section><!-- end .get-started -->
 
 </main><!-- end .main-content -->
+
+<!-- ShareThis JS -->
+<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
+<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"c39b97a4-66f9-4d1a-ae38-2e50543af700","doNotCopy":false,"hashAddressBar":true,"doNotHash":false});var st_type="wordpress3.9.1";</script>
+<!-- end ShareThis JS -->
 
 <?php get_footer(); ?>
