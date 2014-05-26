@@ -73,11 +73,9 @@
 	}
 
 	@media (min-width: @screen-tablet) {
-		
 		article {
 			height: 770px;
 		}
-
 		.article-info {
 			top: 55%;
 		}
@@ -87,7 +85,6 @@
 
 
 .more-reading {
-
 	article {
 		@media (min-width: @screen-tablet) {
 			height: 360px;
@@ -111,26 +108,79 @@
 
 
 // Article page (single.php)
-
-.meta {
-
-	.logo {
-		.pull-right;
-	}
-	
+.post-image {
+	background-size: cover;
+	height: 320px;
+	width: 100%;
 	img {
-		.pull-right;
+		height: 320px;
 	}
 }
 
 .single {
+	.main-content {
+		background: @color-tan;
+		margin: 0;
+		overflow: hidden;
+		float: none;
+		.post {
+			padding: 0 15px;
+		}
+		article {
+			padding: 0;
+			float: none;
+		}
+	}
 
+	.flexmenu {
+		z-index: 1 !important;
+	}
 	.get-started .button{
-		
 		@media (min-width: @screen-tablet) {
 			margin-top: 40px;
 		}
-		
+	}
+	.breadcrumbs {
+		float: none;
+		margin: 0;
+		padding: 15px;
+		.crumb-home {
+			color: @color-darkGrey;
+			font-style: italic;
+			.typeSerifSmall;
+			&:hover {
+				text-decoration: none;
+				color: @color-red;
+			}
+		}
 	}
 }
 
+.post-title {
+	.typeSerifHeader;
+}
+.post-author {
+	color: @color-red;
+	.typeSerifSmall;
+	text-transform: uppercase;
+}
+.post-content {
+	p {
+		.typeSansSerifSmall;
+	}
+	blockquote {
+		border-left: 0;
+		padding-left: 0;
+		padding-bottom: 0;
+		p {
+			.typeSerifSmall;
+			color: @color-darkRed;
+			text-transform: uppercase;
+		}
+	}
+}
+.post-comments {
+	background: @color-white;
+	.padding-section;
+	margin: 40px 0 0;
+}

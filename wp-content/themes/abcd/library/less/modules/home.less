@@ -10,7 +10,7 @@
 		.btn-blue;
 		margin: 10px 0;
 	}
-	@media(max-width: @screen-phone) {
+	@media(max-width: @screen-tablet) {
 		.nav {
 			background: @color-darkRed;
 			margin: 0;
@@ -64,8 +64,19 @@
 	text-align: center;
 }
 
+.image-panel {
+	img {
+		width: 100%;
+		.img-responsive;
+	}
+}
 .mailing-list {
+	overflow: hidden;
 	text-align: left;
+	@media (max-width: @screen-tablet) {
+		width: 90%;
+		margin: 0 auto;
+	}
 	h2 {
 		color: @color-red;
 		font-size: 24px;
@@ -75,14 +86,14 @@
 	br {
 		display: none;
 	}
+	.wp-email-capture-label {
+		.typeSansSerifSmall;
+	}
 	.wp-email-capture-name {
-		@media (max-width: @screen-phone) {
-			display: none;
-		}
+		display: none;
 	}
 	.wp-email-capture-email-label {
-		.typeSansSerifSmall;
-		@media (max-width: @screen-phone) {
+		@media (max-width: @screen-tablet) {
 			color: #ccc;
 			display: block;
 			font-size: 12px;
@@ -94,15 +105,29 @@
 		background: @color-red;
 		border: 0;
 		color: @color-white;
+		height: 42px;
 		padding: 5px 10px;
+		@media (max-width: @screen-tablet) {
+			float: left;
+			margin-right: 10px;
+			position: relative;
+			width: 57%;
+		}
 		@media (max-width: @screen-phone) {
+			float: none;
 			width: 100%;
 		}
 	}
 	.wp-email-capture-submit {
 		.btn;
 		.btn-darkGreen;
-		margin: 10px 0 0 0;
-		width: 140px;
+		@media (max-width: @screen-tablet) {
+			float: right;
+			margin: 0;
+		}
+		@media (max-width: @screen-phone) {
+			float: none;
+			margin: 10px auto;
+		}
 	}
 }

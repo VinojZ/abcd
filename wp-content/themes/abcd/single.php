@@ -3,21 +3,28 @@
 
 <main class="main-content">
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<div class="meta">
-			<div class="category">ABCD Institute &raquo; <?php the_category(', '); ?></div>
-			<div class="logo"><img src="http://placehold.it/130x60"></div>
+	<?php if (have_posts()) : while (have_posts()) : the_post(); $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+
+		<div class="breadcrumbs">
+			<a href="#" class="crumb-home">ABCD Institute</a>
 		</div>
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 			
 			<header>
-				<?php the_post_thumbnail( 'wpbs-featured' ); ?>
+				<div class="post-image" style="background-image: url(<?php echo $featuredImage; ?>);">
+					
+				</div>
 				<div class="page-header">
-					<h1 class="single-title" itemprop="headline"><?php the_title(); ?></h1>
+					<h1 class="post-title" itemprop="headline">
+						<?php the_title(); ?>
+					</h1>
+					<p class="post-author">
+						By <?php the_author(); ?> 
+					</p>
 				</div>
 			</header> <!-- end article header -->
 
-			<section class="post_content clearfix" itemprop="articleBody">
+			<section class="post-content clearfix" itemprop="articleBody">
 				
 				<?php the_content(); ?>
 				
@@ -39,7 +46,7 @@
 			</footer> <!-- end article footer --> 
 		</article> <!-- end article -->
 		
-		<div class="comments">
+		<div class="post-comments">
 			<?php comments_template(); ?>
 		</div>
 
@@ -61,12 +68,12 @@
 
 	<?php endif; ?>
 
-	<section class="get-started call-to-action">
-		<div class="description">
-			<h3>Get started with ABCD today</h3>
-			<p>Your pathway to success begins here</p>
-		</div>
-		<a class="button" href="#">Contact Us</a>
+	<section class="get-started" id="get-started">
+		<div class="call-to-action call-to-action-solo">
+			<h5>Lorem ipsum dolor sit</h5>
+			<h6>Quisque ornare arcu venenatis felis condimentum</h6>
+			<a class="btn btn-blue" href="#">Call to Action</a>
+		</div><!-- end .cta -->
 	</section><!-- end .get-started -->
 
 </main><!-- end .main-content -->
