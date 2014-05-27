@@ -9,13 +9,26 @@
 
 .flexmenu.fm-lg {
 	float: right;
+	li {
+		&:first-child {
+			a {
+				padding-left: 0;
+			}
+		}
+		&:last-child {
+			a {
+				padding-right: 0;
+			}
+		}
+	}
 	a {
 		color: @color-darkGrey;
 		font-weight: bold;
-		padding: 15px 3px;
+		padding: 15px 5px;
 		.typeSerifSmall;
-		&:last-child {
-			padding-right: 0;
+		&:hover {
+			background: none;
+			color: @color-red;
 		}
 	}
 }
