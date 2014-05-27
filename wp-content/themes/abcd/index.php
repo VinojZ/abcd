@@ -30,7 +30,7 @@
 	<?php global $post; ?>
 </section>
 
-<script type="text/javascript" src="/wp-content/themes/abcd/library/js/vendor/blog-index.js">
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/library/js/vendor/min/blog-index-ck.js">
 
 
 <?php get_footer(); ?>
