@@ -487,12 +487,18 @@ if( !function_exists( "theme_js" ) ) {
       get_template_directory_uri() . '/library/js/tab.js', 
       array('jquery'), 
       '1.2' );
+
+    wp_register_script(  'cookie', 
+      get_template_directory_uri() . '/library/js/vendor/jquery.cookie.js', 
+      array('jquery'), 
+      '1.2' );
   
     wp_enqueue_script('bootstrap');
     wp_enqueue_script('wpbs-scripts');
     wp_enqueue_script('modernizr');
     wp_enqueue_script('flexmenu');
     wp_enqueue_script('tab');
+    wp_enqueue_script('cookie');
     
   }
 }

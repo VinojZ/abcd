@@ -1,8 +1,13 @@
 <?php get_header(); ?>
-<section class="blog-intro">
-	<h1 class="blog-intro-logo">The ABCD Institute</h1>
-	<aside class="blog-intro-description">Duis et bibendum nulla. Ut at arcu sapien. Nulla accumsan malesuada faucibus. Sed ut dui vel nisl adipiscing faucibus ac vitae purus. Etiam porta sapien non ante egestas ultrices. Sed sed bibendum odio. In ut neque tellus. Etiam est lacus, semper id imperdiet sed, tincidunt bibendum est.Suspendisse arcu justo, mattis a dignissim vel, malesuada id nisl.</aside>
-</section>
+<div class="top-content" id="top-content">
+	<div class="close-bar">
+		<a class="close-button" id="close-button" href="#">Close [X]</a>
+	</div>
+	<section class="blog-intro">
+		<h1 class="blog-intro-logo">The ABCD Institute</h1>
+		<aside class="blog-intro-description">Duis et bibendum nulla. Ut at arcu sapien. Nulla accumsan malesuada faucibus. Sed ut dui vel nisl adipiscing faucibus ac vitae purus. Etiam porta sapien non ante egestas ultrices. Sed sed bibendum odio. In ut neque tellus. Etiam est lacus, semper id imperdiet sed, tincidunt bibendum est.Suspendisse arcu justo, mattis a dignissim vel, malesuada id nisl.</aside>
+	</section>
+</div><!-- end .top-content -->
 <section class="latest-post">
 	<?php
 		$args = array( 'posts_per_page' => 6);
@@ -24,5 +29,8 @@
 	?>
 	<?php global $post; ?>
 </section>
+
+<script type="text/javascript" src="/wp-content/themes/abcd/library/js/vendor/blog-index.js">
+
 
 <?php get_footer(); ?>
