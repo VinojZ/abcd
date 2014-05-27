@@ -73,7 +73,7 @@
 .mailing-list {
 	overflow: hidden;
 	text-align: left;
-	@media (max-width: @screen-tablet) {
+	@media (max-width: @screen-md) {
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -93,7 +93,7 @@
 		display: none;
 	}
 	.wp-email-capture-email-label {
-		@media (max-width: @screen-tablet) {
+		@media (max-width: @screen-md) {
 			color: #ccc;
 			display: block;
 			font-size: 12px;
@@ -107,10 +107,13 @@
 		color: @color-white;
 		height: 42px;
 		padding: 5px 10px;
-		@media (max-width: @screen-tablet) {
+		@media (max-width: @screen-md) {
 			float: left;
 			margin-right: 10px;
 			position: relative;
+			width: 75%;
+		}
+		@media (max-width: @screen-tablet) {
 			width: 57%;
 		}
 		@media (max-width: @screen-phone) {
@@ -121,7 +124,7 @@
 	.wp-email-capture-submit {
 		.btn;
 		.btn-darkGreen;
-		@media (max-width: @screen-tablet) {
+		@media (max-width: @screen-md) {
 			float: right;
 			margin: 0;
 		}
