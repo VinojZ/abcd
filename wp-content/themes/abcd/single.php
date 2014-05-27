@@ -8,6 +8,7 @@
 
 		<div class="breadcrumbs">
 			<a href="#" class="crumb-home">ABCD Institute</a>
+			<a href="<?php the_permalink(); ?>" class="current-article"><?php the_title(); ?></a>
 		</div>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
