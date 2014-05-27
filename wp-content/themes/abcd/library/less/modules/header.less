@@ -1,16 +1,23 @@
 // Header
+
+header[role='banner'] {
+	@media (max-width: @screen-md) {
+		width: 100%;
+		padding: 0 20px;
+	}
+}
+
 .main-menus {
-	padding: 20px 15px;
+	padding: 20px;
 }
 .site-header {
 	padding-top: 15px;
-}
-.site-header {
 	height: 89px;
 	padding: 0;
-	width: 237px;
+	width: 180px;
 	a {
 		background: url('../img/abcd-global-logo.jpg') no-repeat;
+		background-size: contain;
 		display: block;
 		height: inherit;
 		width: inherit;
