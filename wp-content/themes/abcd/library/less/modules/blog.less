@@ -18,6 +18,28 @@
 	z-index: 2;
 }
 
+.close-bar {
+	.padding-section;
+	background: @abcd-dark-red;
+	text-align: right;
+
+	.close-button {
+		.btn;
+		border-color: #930315;
+		background: #320000;
+		text-transform: uppercase;
+		font-size: 14px;
+		&:link, &:visited {
+			color: #930315;
+		}
+
+		&:hover, &:active {
+			background: #930315;
+			color: #fff;
+		}
+	}
+}
+
 // Namespaced 
 
 .blog {
@@ -29,20 +51,20 @@
 }
 
 .blog-intro {
-	background: @color-red;
 	.padding-section;
+	background: @color-red;
 	text-align: center;
 }
 .blog-intro-logo {
-	background: url('../img/abcd-blog-intro-logo.png') no-repeat;
+	.hide-text;
+	margin: 0 auto 20px;
 	width: 192px;
 	height: 90px;
-	margin: 0 auto 20px;
-	.hide-text;
+	background: url('../img/abcd-blog-intro-logo.png') no-repeat;
 }
 .blog-intro-description {
-	color: #fff;
 	.typeSerifSmall;
+	color: #fff;
 }
 
 .latest-post {
@@ -50,17 +72,17 @@
 
 	article {
 		padding: 20px;
-		text-align: center;
 		background-size: cover;
+		text-align: center;
 	}
 	.article-title {
 		a {
+			.typeSerifHeaderWhite;
 			display: block;
 			padding: 10px 5px;
-			.typeSerifHeaderWhite;
 			&:hover {
-				text-decoration: none;
 				background: @color-red;
+				text-decoration: none;
 			}
 		}
 	}
@@ -109,9 +131,9 @@
 
 // Article page (single.php)
 .post-image {
-	background-size: cover;
-	height: 320px;
 	width: 100%;
+	height: 320px;
+	background-size: cover;
 	img {
 		height: 320px;
 	}
@@ -119,16 +141,16 @@
 
 .single {
 	.main-content {
-		background: @color-tan;
-		margin: 0;
-		overflow: hidden;
 		float: none;
+		overflow: hidden;
+		margin: 0;
+		background: @color-tan;
 		.post {
 			padding: 0 15px;
 		}
 		article {
-			padding: 0;
 			float: none;
+			padding: 0;
 		}
 	}
 
@@ -145,12 +167,12 @@
 		margin: 0;
 		padding: 15px;
 		.crumb-home {
+			.typeSerifSmall;
 			color: @color-darkGrey;
 			font-style: italic;
-			.typeSerifSmall;
 			&:hover {
-				text-decoration: none;
 				color: @color-red;
+				text-decoration: none;
 			}
 		}
 	}
@@ -160,8 +182,8 @@
 	.typeSerifHeader;
 }
 .post-author {
-	color: @color-red;
 	.typeSerifSmall;
+	color: @color-red;
 	text-transform: uppercase;
 }
 .post-content {
@@ -169,9 +191,9 @@
 		.typeSansSerifSmall;
 	}
 	blockquote {
-		border-left: 0;
-		padding-left: 0;
 		padding-bottom: 0;
+		padding-left: 0;
+		border-left: 0;
 		p {
 			.typeSerifSmall;
 			color: @color-darkRed;
@@ -180,9 +202,9 @@
 	}
 }
 .post-comments {
-	background: @color-white;
 	.padding-section;
 	margin: 40px 0 0;
+	background: @color-white;
 }
 
 .share-this {

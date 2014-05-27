@@ -1,0 +1,1 @@
+!function(o){o("#close-button").click(function(e){e.preventDefault(),o("#top-content").hide("slow"),o.cookie("blog-cookie",{expires:180})}),o.cookie("blog-cookie")&&o("#top-content").hide()}(jQuery);
