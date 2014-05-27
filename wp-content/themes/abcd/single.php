@@ -7,7 +7,7 @@
 	<?php if (have_posts()) : while (have_posts()) : the_post(); $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
 		<div class="breadcrumbs">
-			<a href="#" class="crumb-home">ABCD Institute</a>
+			<a href="/the-abcd-institute" class="crumb-home">ABCD Institute</a>
 			<a href="<?php the_permalink(); ?>" class="current-article"><?php the_title(); ?></a>
 		</div>
 
