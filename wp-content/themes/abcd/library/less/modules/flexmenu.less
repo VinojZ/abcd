@@ -29,13 +29,24 @@
 		}
 	}
 	a {
-		color: @color-darkGrey;
+		color: @color-grey;
 		font-weight: bold;
 		padding: 15px 5px;
 		.typeSerifSmall;
 		&:hover {
 			background: none;
 			color: @color-red;
+		}
+	}
+	.menu-item {
+		&:last-child {
+			a {
+				.btn;
+				.btn-blue;
+				.typeSerifSmall;
+				margin: 8px 0 0 8px;
+				width: 90px;
+			}
 		}
 	}
 }

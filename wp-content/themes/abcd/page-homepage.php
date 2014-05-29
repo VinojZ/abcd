@@ -5,9 +5,7 @@ Template Name: Homepage
 ?>
 
 <?php get_header(); ?>
-	<div class="image-panel">
-		<img src="<?php bloginfo('stylesheet_directory'); ?>/library/img/abcd-home-hero-small.jpg" alt="ABCD Group">
-	</div>
+	<div class="image-panel image-panel-home"></div>
 	<section class="company-culture" id="company-culture">
 		<div class="about-abcd">
 			<p>ABCD &amp; Company is a business management-consulting firm that specializes in business start-up, business operations, and business expansion.  We work across industries empowering companies and individuals to become recognized as top performers in their field. We are committed to a standard of excellence driven by people, performance, and product.</p>

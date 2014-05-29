@@ -58,10 +58,10 @@
 .company-culture {
 	background: @color-darkGrey;
 	color: @color-white;
+	text-align: center;
 	.padding-section;
 	.no-padding-bottom;
-	.typeSerifSmall();
-	text-align: center;
+	.typeSerifSmall;
 }
 
 .image-panel {
@@ -70,6 +70,26 @@
 		.img-responsive;
 	}
 }
+
+.image-panel-home {
+	background: url('../img/abcd-home-hero.jpg') no-repeat center top;
+	height: 386px;
+	width: 100%;
+	background-size: cover;
+	@media (min-width: @screen-lg) {
+		background-size: cover;
+		height: 633px;
+	}
+	@media (max-width: @screen-md) {
+		background-size: auto 100%;
+	}
+	@media (max-width: @screen-sm) {
+		background: url('../img/abcd-home-hero-small.jpg') no-repeat;
+		background-size: cover;
+		height: 370px;
+	}
+}
+
 .mailing-list {
 	overflow: hidden;
 	text-align: left;
@@ -134,6 +154,7 @@
 		@media (max-width: @screen-phone) {
 			float: none;
 			margin: 10px auto;
+			width: 160px;
 		}
 	}
 }
