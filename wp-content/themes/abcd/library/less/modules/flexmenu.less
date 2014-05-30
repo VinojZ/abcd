@@ -52,6 +52,22 @@
 	}
 }
 
+.main-menus {
+
+	@media (min-width: @screen-lg) {
+		a {
+			color: @color-grey;
+			font-weight: bold;
+			padding: 15px 5px;
+			.typeSerifSmall;
+			&:hover {
+				background: none;
+				color: @color-red;
+			}
+		}
+	}
+}	
+
 // Menu button for mobile
 .fm-button {
 	border: 1px solid @abcd-red;
