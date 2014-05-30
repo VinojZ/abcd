@@ -1,17 +1,37 @@
-// Meet the Team
+.about-abcd {
+	text-align: left;
+	@media(max-width: @screen-tablet) {
+		text-align: center;
+	}
+}
 
 .beliefs {
 	background: @color-red;
-	margin: 20px 0 0;
-	padding: 0;
-	padding-bottom: 0;
+	padding: 20px 0;
 	.learn-more {
 		.btn;
 		.btn-blue;
 		margin: 10px 0;
 	}
-	@media(max-width: @screen-tablet) {
-		.nav {
+	.tab-pane {
+		padding: 20px 45px;
+		overflow: hidden;
+		@media(max-width: @screen-tablet) {
+			display: none;
+		}
+		h3 {
+			margin: 0 0 10px 0;
+		}
+		p {
+			text-align: left;
+			margin: 0 0 20px 0;
+		}
+		&.active {
+			display: block;
+		}
+	}
+	.nav {
+		@media(max-width: @screen-tablet) {
 			background: @color-darkRed;
 			margin: 0;
 			li {
@@ -32,25 +52,15 @@
 				}
 			}
 		}
-		.row {
-			background: @color-red;
-		}
-		.tab-pane {
+	}
+	.nav-pills {
+		@media(min-width: @screen-md) {
 			display: none;
-			padding: 20px 45px;
-			overflow: hidden;
-			h3 {
-				margin: 0 0 10px 0;
-			}
-			&.active {
-				display: block;
-			}
 		}
 	}
-
-	@media(min-width: @screen-md) {
-		.nav-pills {
-			display: none;
+	.row {
+		@media(max-width: @screen-tablet) {
+			background: @color-red;
 		}
 	}
 }
@@ -62,6 +72,10 @@
 	.padding-section;
 	.no-padding-bottom;
 	.typeSerifSmall;
+
+	.company-culture-intro {
+		margin: 0 0 20px 0;
+	}
 }
 
 .image-panel {
@@ -93,14 +107,14 @@
 .mailing-list {
 	overflow: hidden;
 	text-align: left;
-	@media (max-width: @screen-md) {
-		width: 90%;
-		margin: 0 auto;
+	@media(max-width: @screen-tablet) {
+		text-align: center;
 	}
 	h2 {
 		color: @color-red;
 		font-size: 24px;
 		font-weight: bold;
+		margin: 0 0 10px 0;
 		.typeSansSerifHeaderRed;
 	}
 	br {
@@ -113,20 +127,20 @@
 		display: none;
 	}
 	.wp-email-capture-email-label {
-		@media (max-width: @screen-md) {
-			color: #ccc;
-			display: block;
-			font-size: 12px;
-			font-weight: bold;
-			margin: 0;
-		}
+		color: #ccc;
+		display: block;
+		font-size: 12px;
+		font-weight: bold;
+		margin: 0;
 	}
 	.wp-email-capture-input {
 		background: @color-red;
 		border: 0;
 		color: @color-white;
 		height: 42px;
+		margin: 0 0 10px 0;
 		padding: 5px 10px;
+		width: 100%;
 		@media (max-width: @screen-md) {
 			float: left;
 			margin-right: 10px;
@@ -144,10 +158,8 @@
 	.wp-email-capture-submit {
 		.btn;
 		.btn-darkGreen;
-		@media (max-width: @screen-md) {
 			float: right;
 			margin: 0;
-		}
 		@media (max-width: @screen-tablet) {
 			width: 18%;
 		}

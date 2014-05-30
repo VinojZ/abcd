@@ -44,5 +44,3 @@
 			</div> <!-- end .fm-container -->
 		
 		</header> <!-- end header -->
-		
-		<div class="container">
