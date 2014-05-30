@@ -2,7 +2,9 @@
 
 .footer {
 	.padding-section;
-	text-align: center;
+	@media(max-width: @screen-desktop) {
+		text-align: center;
+	}
 	
 	.footer-links {
 		.pull-left;
@@ -18,13 +20,12 @@
 	}
 }
 
-nav.footer-nav {
-	float: none;
-}
-
 .footer-menu {
 	overflow: hidden;
-	width: 100%;
+	width: 40%;
+	@media(max-width: @screen-tablet) {
+		width: 100%;
+	}
 	ul, .footer-links {
 		width: 100%;
 	}
@@ -36,16 +37,33 @@ nav.footer-nav {
 
 .icon-socialmedia-set {
 	overflow: hidden;
-	margin: 40px auto;
-	width: 222px;
+	text-align: center;
 	a {
-		float: left;
+		display: inline-block;
+		float: none;
 		margin-right: 60px;
 		&:last-child {
 			margin-right: 0;
 		}
 	}
 }
+.icon-socialmedia-set-header {
+	height: 36px;
+	margin: 25px 0 0 0;
+	a {
+		margin-right: 20px;
+		vertical-align: top;
+	}
+	@media(max-width: @screen-tablet) {
+		display: none;
+	}
+}
+.icon-socialmedia-set-footer {
+	@media(min-width: @screen-desktop) {
+		display: none;
+	}
+}
+
 .icon-socialmedia {
 	height: 36px;
 }
@@ -60,4 +78,10 @@ nav.footer-nav {
 .icon-socialmedia-facebook {
 	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat -82px 0;
 	width: 19px;
+}
+
+.latest-tweet {
+	@media(max-width: @screen-desktop) {
+		display: none;
+	}
 }

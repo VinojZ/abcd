@@ -21,28 +21,25 @@ Template Name: Homepage
 		</div>
 
 		<div class="beliefs">
+			<ul class="nav nav-pills" id="tabs">
+				<li><a href="#people" data-toggle="tab">People</a></li>
+				<li><a href="#performance" data-toggle="tab">Performance</a></li>
+				<li><a href="#product" data-toggle="tab">Product</a></li>
+			</ul>
 			<div class="container">
-				<ul class="nav nav-pills" id="tabs">
-					<li><a href="#people" data-toggle="tab">People</a></li>
-					<li><a href="#performance" data-toggle="tab">Performance</a></li>
-					<li><a href="#product" data-toggle="tab">Product</a></li>
-				</ul>
 				<div class="tab-content">
 					<div class="people tab-pane active" id="people">
 						<h3>People</h3>
 						<p>People are lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. </p>
-						<a class="btn btn-blue" href="#">Learn More</a>
 					</div>
 					
 					<div class="performance tab-pane" id="performance">
 						<h3>Performance</h3>
 						<p>Performance is adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero.</p>
-						<a class="btn btn-blue" href="#">Learn More</a> 
 					</div>
 					<div class="product tab-pane" id="product">
 						<h3>Product</h3>
 						<p>Product was onsectetur adipiscing elit. Nullam iaculis lectus massa, ac varius neque laoreet ac. Morbi nulla diam, fringilla vitae porta quis, egestas ac libero.</p>
-						<a class="btn btn-blue" href="#">Learn More</a> 
 					</div>
 				</div><!-- end .tab-content -->
 			</div>
@@ -106,9 +103,11 @@ Template Name: Homepage
 				</p>
 			</div><!-- end .member -->
 			<div class="call-to-action">
-				<h5>We want the best</h5>
-				<h6>Great people make a great company</h6>
-				<a class="btn btn-green" href="#">Join The Team</a>
+				<div class="call-to-action-inner">
+					<h5>We want the best</h5>
+					<h6>Great people make a great company</h6>
+					<a class="btn btn-green" href="#">Join The Team</a>
+				</div>
 			</div><!-- end .cta --> 
 		</div>              
 	</section><!-- end .meet-the-team -->
@@ -192,9 +191,11 @@ Template Name: Homepage
 				</ol>
 			</div>
 			<div class="call-to-action">
-				<h5>Lorem ipsum dolor sit</h5>
-				<h6>Quisque ornare arcu venenatis felis condimentum</h6>
-				<a class="btn btn-green" href="#">Call to Action</a>
+				<div class="call-to-action-inner">
+					<h5>We want the best</h5>
+					<h6>Great people make a great company</h6>
+					<a class="btn btn-green" href="#">Join The Team</a>
+				</div>
 			</div><!-- end .cta -->
 		</div>
 	</section><!-- end .industries -->
@@ -280,9 +281,11 @@ Template Name: Homepage
 	<section class="get-started" id="get-started">
 		<div class="container">
 			<div class="call-to-action call-to-action-solo">
-				<h5>Lorem ipsum dolor sit</h5>
-				<h6>Quisque ornare arcu venenatis felis condimentum</h6>
-				<a class="btn btn-blue" href="#">Call to Action</a>
+				<div class="call-to-action-inner">
+					<h5>We want the best</h5>
+					<h6>Great people make a great company</h6>
+					<a class="btn btn-blue" href="#">Join The Team</a>
+				</div>
 			</div><!-- end .cta -->
 		</div>
 	</section><!-- end .get-started -->

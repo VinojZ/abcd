@@ -17,8 +17,9 @@ header[role='banner'] {
 }
 
 .site-header {
-	.make-xs-column(3);
-	@media(max-width: @screen-phone) {
+	.make-xs-column(5);
+	.make-sm-column(3);
+	@media(max-width: @screen-tablet) {
 		.pull-right;
 	}
 	.make-lg-column(3);
@@ -28,6 +29,10 @@ header[role='banner'] {
 .fm-button {
 	.make-xs-column(2);
 	.make-lg-column(0);
+}
+
+.fm-lg {
+	.make-lg-column(6);
 }
 
 // ---- HOMEPAGE ---------------/
@@ -50,16 +55,27 @@ header[role='banner'] {
 	.make-md-column(12);
 }
 
+.icon-socialmedia-set-header {
+	.make-lg-column(3);
+	@media(max-width: @screen-lg) {
+		display: none;
+	}
+}
+
+.icon-socialmedia-set-footer {
+	.make-xs-column(12);
+}
+
 // Company Culture
 
 .company-culture {
 
 	.about-abcd {
-		.make-md-column(8);
+		.make-md-column(7);
 	}
 
 	.mailing-list {
-		.make-md-column(4);
+		.make-md-column(5);
 	}
 }
 
@@ -70,6 +86,27 @@ header[role='banner'] {
 .tab-pane { 
 	.make-md-column(4);
 }
+
+.mailing-list {
+	.make-row;
+	.wp-email-capture-input {
+		.make-xs-column(12);
+		.make-sm-column(9);
+		@media(min-width: @screen-tablet) {
+			width: 73%;
+		}
+	}
+
+	.wp-email-capture-submit {
+		.make-xs-column(12);
+		.make-sm-column(3);
+		@media(min-width: @screen-tablet) {
+			.pull-right;
+		}
+	}
+}
+
+
 
 // Units
 
@@ -88,12 +125,12 @@ header[role='banner'] {
 
 	nav {
 		.make-xs-column(12);
-		.make-md-column(9);
+		.make-md-column(8);
 	}
 
 	.latest-tweet {
 		.make-xs-column(12);
-		.make-md-column(3);
+		.make-md-column(4);
 	}
 }
 

@@ -12,28 +12,30 @@ header[role='banner'] {
 }
 .site-header {
 	padding-top: 15px;
-	height: 69px;
+	height: 89px;
 	padding: 0;
-	width: 180px;
 	a {
 		background: url('../img/abcd-global-logo.jpg') no-repeat;
 		background-size: contain;
 		display: block;
 		height: inherit;
-		width: inherit;
+		width: 100%;
 		.text-hide();
+		@media (max-width: @screen-md) {
+			margin-top: 10px;
+		}
+		@media (max-width: @screen-sm) {
+			width: 112px;
+			float: right;
+			margin: 0;
+		}
 		@media (max-width: @screen-xs) {
 			background: url('../img/abcd-global-logo-small.jpg') no-repeat;
+			text-align: right;
 		}
 	}
 	@media (max-width: @screen-sm) {
-		height: 56px;
-		margin-right: 15px;
-		width: 150px;
-		float: right;
-	}
-	@media (max-width: @screen-xs) {
-		height: 40px;
-		width: 107px;
+		height: 45px;
+		margin-top: 5px;
 	}
 }

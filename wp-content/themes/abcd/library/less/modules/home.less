@@ -8,30 +8,16 @@
 .beliefs {
 	background: @color-red;
 	padding: 20px 0;
+	@media(max-width: @screen-tablet) {
+		padding-top: 0;
+	}
 	.learn-more {
 		.btn;
 		.btn-blue;
 		margin: 10px 0;
 	}
-	.tab-pane {
-		padding: 20px 45px;
-		overflow: hidden;
-		@media(max-width: @screen-tablet) {
-			display: none;
-		}
-		h3 {
-			margin: 0 0 10px 0;
-		}
-		p {
-			text-align: left;
-			margin: 0 0 20px 0;
-		}
-		&.active {
-			display: block;
-		}
-	}
 	.nav {
-		@media(max-width: @screen-tablet) {
+		@media(max-width: @screen-desktop) {
 			background: @color-darkRed;
 			margin: 0;
 			li {
@@ -54,13 +40,37 @@
 		}
 	}
 	.nav-pills {
-		@media(min-width: @screen-md) {
+		@media(min-width: @screen-tablet) {
 			display: none;
 		}
 	}
 	.row {
-		@media(max-width: @screen-tablet) {
+		@media(max-width: @screen-desktop) {
 			background: @color-red;
+		}
+	}
+	.tab-pane {
+		padding: 20px 45px;
+		overflow: hidden;
+		@media(max-width: @screen-tablet) {
+			display: none;
+		}
+		h3 {
+			font-weight: 700;
+			margin: 0 0 10px 0;
+			.typeSerifHeaderWhite;
+		}
+		p {
+			text-align: left;
+			margin: 0 0 20px 0;
+			@media(max-width: @screen-desktop) {
+				margin: 0 auto;
+				text-align: center;
+				width: 70%;
+			}
+		}
+		&.active {
+			display: block;
 		}
 	}
 }
@@ -109,6 +119,7 @@
 	text-align: left;
 	@media(max-width: @screen-tablet) {
 		text-align: center;
+		margin-top: 40px;
 	}
 	h2 {
 		color: @color-red;
@@ -140,33 +151,10 @@
 		height: 42px;
 		margin: 0 0 10px 0;
 		padding: 5px 10px;
-		width: 100%;
-		@media (max-width: @screen-md) {
-			float: left;
-			margin-right: 10px;
-			position: relative;
-			width: 75%;
-		}
-		@media (max-width: @screen-tablet) {
-			width: 80%;
-		}
-		@media (max-width: @screen-phone) {
-			float: none;
-			width: 100%;
-		}
 	}
 	.wp-email-capture-submit {
-		.btn;
+		.btn-no-width;
 		.btn-darkGreen;
-			float: right;
-			margin: 0;
-		@media (max-width: @screen-tablet) {
-			width: 18%;
-		}
-		@media (max-width: @screen-phone) {
-			float: none;
-			margin: 10px auto;
-			width: 160px;
-		}
+		height: 42px;
 	}
 }
