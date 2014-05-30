@@ -288,6 +288,6 @@ Template Name: Homepage
 	</section><!-- end .get-started -->
 
 
-	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/library/js/vendor/min/abcd-home-ck.js">
+	<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/library/js/vendor/min/abcd-home-ck.js"></script>
 
 <?php get_footer(); ?>
