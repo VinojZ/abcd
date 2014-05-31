@@ -118,18 +118,31 @@ header[role='banner'] {
 
 .footer {
 
-	.make-row;
+	.inner-footer {
+		.container;
+	}
 
-	nav {
+	.wrapper {
+		.make-row;
+	}
+
+	&__sidebars {
+		.make-xs-column(0);
+		.make-md-column(4);
+	}
+
+	&__industries {
 		.make-xs-column(12);
-		.make-md-column(8);
+		.make-md-column(2);
 	}
 
 	.latest-tweet {
 		.make-xs-column(12);
 		.make-md-column(4);
 	}
+
 }
+
 
 
 // Blog listing (index.php)
