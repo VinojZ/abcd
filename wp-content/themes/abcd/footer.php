@@ -44,7 +44,8 @@
 		 <script>
 		    (function($){
 		      $('header .menu').flexMenu({
-		        responsivePattern: 'off-canvas'
+		        responsivePattern: 'off-canvas',
+		        breakpoint: 1025
 		      });
 		    })(jQuery);
   		</script>
