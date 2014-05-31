@@ -12,7 +12,6 @@ header[role='banner'] {
 
 	.site-header {
 		height: 89px;
-		padding: 0;
 		@media (max-device-width: 1024px) {
 			// Using device width instead of Bootstrap screen size to account for RetinaDisplay iPad
 			.pull-right;
@@ -24,20 +23,14 @@ header[role='banner'] {
 			height: inherit;
 			width: 100%;
 			.text-hide();
-			@media (min-width: @screen-md) {
-				//margin-top: 10px;
-			}
 			@media (max-width: @screen-md) {
 				width: 112px;
-				.pull-right;
 				margin: 0;
-			}
-			@media (max-width: @screen-md) {
 				background: url('../img/abcd-global-logo-small.jpg') no-repeat;
 				text-align: right;
 			}
 		}
-		@media (max-width: @screen-sm) {
+		@media (max-width: @screen-md) {
 			height: 45px;
 			margin-top: 5px;
 		}

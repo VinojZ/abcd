@@ -3,8 +3,9 @@
 
 <main class="main-content">
 
+	<div class="container">
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
+		<?php if (have_posts()) : while (have_posts()) : the_post(); $featuredImage = wp_get_attachment_url( get_post_thumbnail_id($post->ID) ); ?>
 
 		<div class="breadcrumbs">
 			<a href="/the-abcd-institute" class="crumb-home">ABCD Institute</a>
@@ -19,12 +20,6 @@
 					
 				</div>
 
-				<!-- ShareThis plugin -->
-				<div class="social share-this">
-					<span class='st_facebook' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
-					<span st_via='something' st_username='something' class='st_twitter' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
-				</div><!-- end .social.share-this -->
-
 				<div class="page-header">
 					<h1 class="post-title" itemprop="headline">
 						<?php the_title(); ?>
@@ -32,6 +27,14 @@
 					<p class="post-author">
 						By <?php the_author(); ?> 
 					</p>
+
+					<!-- ShareThis plugin -->
+					<div class="article-share">
+						<span st_via='@theabcdcompany' st_username='@theabcdcompany' class='st_twitter_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+						<span class='st_facebook_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+						<span st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' class='st_linkedin_large'></span>
+						<span st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' class='st_email_large'></span>
+					</div>
 				</div>
 			</header> <!-- end article header -->
 
@@ -55,46 +58,47 @@
 				<?php } ?>
 				
 			</footer> <!-- end article footer --> 
+
+			<section class="get-started get-started-blog" id="get-started">
+				<div class="call-to-action call-to-action-solo">
+					<h5>Lorem ipsum dolor sit</h5>
+					<h6>Quisque ornare arcu venenatis felis condimentum</h6>
+					<a class="btn btn-red" href="#">Call to Action</a>
+				</div><!-- end .cta -->
+			</section><!-- end .get-started -->
+
 		</article> <!-- end article -->
 
-		
-		<div class="post-comments">
+	</div>
 
-		<div class="other-articles">
-			<?php previous_post('&laquo; %', '', 'yes'); ?>
-			| <?php next_post('% &raquo; ', '', 'yes'); ?>
-		</div><!-- end .other-articles -->
+</main><!-- end .main-content -->
+
+<div class="post-comments">
+	<div class="container">
 		<div class="comments">
 			<?php comments_template(); ?>
 		</div>
+	</div>
 
-		<?php endwhile; ?>
+</div>
+
+<?php endwhile; ?>
 
 
-		<?php else : ?>
+<?php else : ?>
 
-		<article id="post-not-found">
-		    <header>
-		    	<h1><?php _e("Not Found", "wpbootstrap"); ?></h1>
-		    </header>
-		    <section class="post_content">
-		    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpbootstrap"); ?></p>
-		    </section>
-		    <footer>
-		    </footer>
-		</article>
+<article id="post-not-found">
+    <header>
+    	<h1><?php _e("Not Found", "wpbootstrap"); ?></h1>
+    </header>
+    <section class="post_content">
+    	<p><?php _e("Sorry, but the requested resource was not found on this site.", "wpbootstrap"); ?></p>
+    </section>
+    <footer>
+    </footer>
+</article>
 
-	<?php endif; ?>
-
-	<section class="get-started" id="get-started">
-		<div class="call-to-action call-to-action-solo">
-			<h5>Lorem ipsum dolor sit</h5>
-			<h6>Quisque ornare arcu venenatis felis condimentum</h6>
-			<a class="btn btn-blue" href="#">Call to Action</a>
-		</div><!-- end .cta -->
-	</section><!-- end .get-started -->
-
-</main><!-- end .main-content -->
+<?php endif; ?>
 
 <!-- ShareThis JS -->
 <script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>

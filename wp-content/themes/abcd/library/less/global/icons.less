@@ -2,3 +2,51 @@
 	.hide-text;
 	display: block;
 }
+
+.icon-socialmedia-set {
+	overflow: hidden;
+	text-align: center;
+	a {
+		display: inline-block;
+		float: none;
+		margin-right: 60px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+}
+.icon-socialmedia-set-header {
+	margin: 10px 0 0 0;
+	a {
+		margin-right: 20px;
+		vertical-align: top;
+	}
+	@media(max-width: @screen-tablet) {
+		display: none;
+	}
+}
+.icon-socialmedia-set-footer {
+	margin: 40px 0;
+	a {
+		vertical-align: top;
+	}
+	@media(min-width: @screen-desktop) {
+		display: none;
+	}
+}
+
+.icon-socialmedia {
+	height: 36px;
+}
+.icon-socialmedia-twitter {
+	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat 0;
+	width: 45px;
+}
+.icon-socialmedia-instagram {
+	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat -45px 0;
+	width: 37px;
+}
+.icon-socialmedia-facebook {
+	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat -82px 0;
+	width: 19px;
+}

@@ -3,14 +3,14 @@
 .btn {
 	.border-radius(3px);
 	display: inline-block;
-	.typeSansSerifMedium;
+	.typeSerifMedium;
 	width: 160px;
 }
 
 .btn-no-width {
 	.border-radius(3px);
 	display: inline-block;
-	.typeSansSerifMedium;
+	.typeSerifMedium;
 	border: 0;
 }
 
@@ -38,27 +38,39 @@
 	}
 }
 .btn-green {
-	background: @color-green;
-	color: lighten(@color-green,50%);
+	@theme-color: @color-green;
+	background: @theme-color;
+	color: lighten(@theme-color,50%);
 	&:hover {
-		background: lighten(@color-green,5%);
+		background: lighten(@theme-color,5%);
+		color: @color-white;
+	}
+}
+.btn-red {
+	@theme-color: @color-darkRed;
+	background: @theme-color;
+	color: lighten(@theme-color,50%);
+	&:hover {
+		background: lighten(@theme-color,5%);
 		color: @color-white;
 	}
 }
 .btn-darkGreen {
-	background: @color-darkGreen;
-	color: lighten(@color-darkGreen,50%);
+	@theme-color: @color-darkGreen;
+	background: @theme-color;
+	color: lighten(@theme-color,50%);
 	&:hover {
-		background: lighten(@color-darkGreen,5%);
+		background: lighten(@theme-color,5%);
 		color: @color-white;
 	}
 
 }
 .btn-blue {
-	background: @color-blue;
-	color: lighten(@color-blue,50%);
+	@theme-color: @color-blue;
+	background: @theme-color;
+	color: lighten(@theme-color,50%);
 	&:hover {
-		background: lighten(@color-blue,5%);
+		background: lighten(@theme-color,5%);
 		color: @color-white;
 	}
 }

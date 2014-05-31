@@ -18,9 +18,14 @@ header[role='banner'] {
 
 .site-header {
 	.make-xs-column(5);
+	@media(max-width: @screen-md) {
+		.pull-right;
+		a {
+			.pull-right;
+		}
+	}
 	.make-md-column(3);
 	.make-lg-column(3);
-	
 }
 
 .fm-button {
@@ -147,7 +152,7 @@ header[role='banner'] {
 
 // Blog listing (index.php)
 
-.intro {
+.blog-intro {
 
 	h1 {
 		.make-xs-column(12);
@@ -163,13 +168,9 @@ header[role='banner'] {
 .latest-post {
 	
 	article {
-		.make-xs-column(12);
-	}
-}
-
-.more-reading {
-	
-	article {
+		&:first-child {
+			.make-xs-column(12);
+		}
 		.make-xs-column(12);
 		.make-md-column(4);
 	}
