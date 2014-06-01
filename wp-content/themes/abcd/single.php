@@ -46,7 +46,7 @@
 
 			</section> <!-- end article section -->
 			
-			<footer>
+			<footer class="post-footer">
 
 				<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', '</p>'); ?>
 				
