@@ -14,6 +14,7 @@
 							</nav>
 							
 							<div class="footer__sidebars">
+								<h3 class="footer-title typeSerifHeaderRed">Navigate</h3>
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer1') ) : ?>
 								<?php endif; ?>
 								<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('footer2') ) : ?>
@@ -46,10 +47,9 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
-		<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
-<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"c39b97a4-66f9-4d1a-ae38-2e50543af700"});var st_type="wordpress3.9.1";</script>
-		 <script>
+		
+		<!-- FlexMenu Configuration -->
+		<script>
 		    (function($){
 		      $('header .menu').flexMenu({
 		        responsivePattern: 'off-canvas',
@@ -57,6 +57,24 @@
 		      });
 		    })(jQuery);
   		</script>
+  		
+  		<!-- ShareThis -->
+  		<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
+		<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"e8b4d0ff-e7c2-42a2-a2e8-564bb3888ba0","doNotCopy":true,"hashAddressBar":false,"doNotHash":true});var st_type="wordpress3.9.1";</script>
+  		
+
+  		<!-- Google Analytics Account -->
+  		<script>
+			  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+			  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+			  ga('create', 'UA-51539101-1', 'abcdcompany.com');
+			  ga('send', 'pageview');
+		</script>
+
 	</body>
 
 </html>
