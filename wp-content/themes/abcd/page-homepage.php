@@ -156,7 +156,7 @@ Template Name: Homepage
 					<div class="call-to-action-inner">
 						<h5>We want the best</h5>
 						<h6>Great people make a great company</h6>
-						<a class="btn btn-green" href="#">Join The Team</a>
+						<a class="btn btn-green" href="get-started">Join The Team</a>
 					</div>
 				</div><!-- end .cta --> 
 			</div>              
@@ -244,7 +244,7 @@ Template Name: Homepage
 					<div class="call-to-action-inner">
 						<h5>We want the best</h5>
 						<h6>Great people make a great company</h6>
-						<a class="btn btn-green" href="#">Join The Team</a>
+						<a class="btn btn-green" href="get-started">Join The Team</a>
 					</div>
 				</div><!-- end .cta -->
 			</div>
@@ -334,7 +334,7 @@ Template Name: Homepage
 					<div class="call-to-action-inner">
 						<h5>We want the best</h5>
 						<h6>Great people make a great company</h6>
-						<a class="btn btn-blue" href="#">Join The Team</a>
+						<a class="btn btn-blue" href="get-started">Join The Team</a>
 					</div>
 				</div><!-- end .cta -->
 			</div>
