@@ -41,7 +41,7 @@
 	<?php global $post; ?>
 </section>
 
-<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/library/js/vendor/min/blog-index-ck.js">
+<script type="text/javascript" src="<?php bloginfo('stylesheet_directory'); ?>/library/js/vendor/min/blog-index-ck.js"></script>
 
 
 <?php get_footer(); ?>
