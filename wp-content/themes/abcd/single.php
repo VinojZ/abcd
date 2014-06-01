@@ -61,9 +61,13 @@
 
 			<section class="get-started get-started-blog" id="get-started">
 				<div class="call-to-action call-to-action-solo">
-					<h5>Lorem ipsum dolor sit</h5>
-					<h6>Quisque ornare arcu venenatis felis condimentum</h6>
-					<a class="btn btn-red" href="#">Call to Action</a>
+					<div class="get-started-copy">
+						<h5>Get started with ABCD today.</h5>
+						<h6>Your pathway to success begins here.</h6>
+					</div>
+					<div class="get-started-cta">
+						<a class="btn btn-red" href="#">Call to Action</a>
+					</div>
 				</div><!-- end .cta -->
 			</section><!-- end .get-started -->
 

@@ -97,7 +97,7 @@ Template Name: Homepage
 
 		</section><!-- end .company-culture -->
 
-		<section class="meettheteam" id="meet-the-leadership">
+		<section class="meettheteam" id="meet-the-team">
 
 			<div class="container">
 				<div class="description">
