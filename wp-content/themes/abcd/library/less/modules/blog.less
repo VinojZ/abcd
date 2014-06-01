@@ -73,13 +73,13 @@
 	overflow: hidden;
 
 	article {
-		padding: 40px 0 0;
+		padding: 40px 0 20px;
 		background-size: cover;
 		background-position: center;
 		text-align: center;
 		position: relative;
 		@media (min-width: @screen-desktop) {
-			height: 400px;
+			height: 490px;
 		}
 		&:first-child {
 			text-align: left;
@@ -95,11 +95,20 @@
 			}
 		}
 	}
+	.article-info {
+		padding: 0 20px;
+		height: 100%;
+	}
 	.article-share {
 		position: absolute;
 		bottom: 20px;
 		right: 20px;
-
+		@media (max-width: @screen-desktop) {
+			position: relative;
+			bottom: auto;
+			right: auto;
+			margin: 20px 0 0 0;
+		}
 	}
 	.article-title {
 		width: 60%;
@@ -117,14 +126,11 @@
 	.article-excerpt {
 		.typeSerifSmall;
 		color: @color-white;
+		width: 90%;
+		margin: 0 auto;
 	}
 	.article-readmore {
 		margin: 20px 0;
-	}
-
-	.article-info {
-		padding: 0 20px;
-		height: 100%;
 	}
 
 }
