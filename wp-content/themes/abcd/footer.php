@@ -47,9 +47,7 @@
 		<![endif]-->
 		
 		<?php wp_footer(); // js scripts are inserted using this function ?>
-		<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
-		<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-		<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"c39b97a4-66f9-4d1a-ae38-2e50543af700"});var st_type="wordpress3.9.1";</script>
+		
 		<!-- FlexMenu Configuration -->
 		<script>
 		    (function($){
@@ -59,6 +57,12 @@
 		      });
 		    })(jQuery);
   		</script>
+  		
+  		<!-- ShareThis -->
+  		<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
+		<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+		<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"e8b4d0ff-e7c2-42a2-a2e8-564bb3888ba0","doNotCopy":true,"hashAddressBar":false,"doNotHash":true});var st_type="wordpress3.9.1";</script>
+  		
 
   		<!-- Google Analytics Account -->
   		<script>
