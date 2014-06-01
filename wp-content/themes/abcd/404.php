@@ -1,42 +1,29 @@
 <?php get_header(); ?>
+	<div class="container">
+	<section class="google-custom-search">					
+		<div class="engine">
 			
-			<div id="content" class="clearfix row">
+			<h1><?php _e("404 - Article Not Found","wpbootstrap"); ?></h1>
+		
+			<p><?php _e("We can't find what you were looking for.","wpbootstrap"); ?></p>
+		
+			<p><?php _e("Please try searching below:","wpbootstrap"); ?></p>
 			
-				<div id="main" class="col-sm-12 clearfix" role="main">
+			<script>
+			  (function() {
+			    var cx = '015226466563954189157:t0s6vhvyq9k';
+			    var gcse = document.createElement('script');
+			    gcse.type = 'text/javascript';
+			    gcse.async = true;
+			    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+			        '//www.google.com/cse/cse.js?cx=' + cx;
+			    var s = document.getElementsByTagName('script')[0];
+			    s.parentNode.insertBefore(gcse, s);
+			  })();
+			</script>
+			<gcse:search></gcse:search>
+		</div><!-- end .engine -->
 
-					<article id="post-not-found" class="clearfix">
-						
-						<header>
-
-							<div class="hero-unit">
-							
-								<h1><?php _e("Epic 404 - Article Not Found","wpbootstrap"); ?></h1>
-								<p><?php _e("This is embarassing. We can't find what you were looking for.","wpbootstrap"); ?></p>
-															
-							</div>
-													
-						</header> <!-- end article header -->
-					
-						<section class="post_content">
-							
-							<p><?php _e("Whatever you were looking for was not found, but maybe try looking again or search using the form below.","wpbootstrap"); ?></p>
-
-							<div class="row">
-								<div class="col col-lg-12">
-									<?php get_search_form(); ?>
-								</div>
-							</div>
-					
-						</section> <!-- end article section -->
-						
-						<footer>
-							
-						</footer> <!-- end article footer -->
-					
-					</article> <!-- end article -->
-			
-				</div> <!-- end #main -->
-    
-			</div> <!-- end #content -->
-
+	</section>
+</div><!-- end .container -->
 <?php get_footer(); ?>
