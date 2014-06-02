@@ -18,13 +18,15 @@
 	width: inherit;
 }
 
-.flexmenu.fm-lg {
+.main-menus .menu {
 	float: right;
 	margin: 10px 0 0 0;
 	li {
-		&:first-child {
-			a {
-				padding-left: 0;
+		@media (min-device-width: 1025px) {
+			&:first-child {
+				a {
+					padding-left: 0;
+				}
 			}
 		}
 		&:last-child {
@@ -44,13 +46,15 @@
 		}
 	}
 	.menu-item {
-		&:last-child {
-			a {
-				.btn;
-				.btn-blue;
-				.typeSerifSmall;
-				margin: 8px 0 0 8px;
-				width: 90px;
+		@media (min-device-width: 1025px) {
+			&:last-child {
+				a {
+					.btn;
+					.btn-blue;
+					.typeSerifSmall;
+					margin: 8px 0 0 8px;
+					width: 90px;
+				}
 			}
 		}
 	}
