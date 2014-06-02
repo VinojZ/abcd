@@ -11,7 +11,8 @@ header[role='banner'] {
 	padding: 20px;
 
 	.site-header {
-		height: 89px;
+		height: 45px;
+		margin: 16px 0 0 0;
 		@media (max-device-width: 1024px) {
 			// Using device width instead of Bootstrap screen size to account for RetinaDisplay iPad
 			.pull-right;
@@ -21,6 +22,8 @@ header[role='banner'] {
 			background-size: contain;
 			display: block;
 			height: inherit;
+			margin: 0;
+			padding: 0;
 			width: 100%;
 			.text-hide();
 			@media (max-width: @screen-md) {
