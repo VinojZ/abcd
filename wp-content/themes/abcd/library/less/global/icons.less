@@ -5,7 +5,6 @@
 
 .icon-socialmedia-set {
 	overflow: hidden;
-	text-align: left;
 	height: 45px;
 	a {
 		display: inline-block;
@@ -18,11 +17,19 @@
 }
 .icon-socialmedia-set-footer {
 	margin: 40px 0;
+	text-align: center;
 	a {
 		vertical-align: top;
 	}
 	@media(min-width: @screen-desktop) {
 		display: none;
+	}
+	.icon-socialmedia {
+		height: 32px;
+		width: 32px;
+		&.icon-socialmedia-twitter {
+			width: 39px;
+		}
 	}
 }
 
