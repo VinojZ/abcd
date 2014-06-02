@@ -13,16 +13,21 @@
 
 .flexmenu.fm-sm ul li {
 	width: 100%;
+	border: 0;
+	@media (max-width: 1025px) {
+		margin: 10px 0 0 0;
+	}
 }
 .flexmenu.fm-sm ul li a {
 	width: inherit;
+	background: transparent;
 }
 
 .main-menus .menu {
 	float: right;
-	margin: 10px 0 0 0;
+	margin: 6px 0 0 0;
 	li {
-		@media (min-device-width: 1025px) {
+		@media (min-width: 1025px) {
 			&:first-child {
 				a {
 					padding-left: 0;
@@ -38,7 +43,7 @@
 	a {
 		color: @color-grey;
 		font-weight: bold;
-		padding: 15px 5px;
+		padding: 8px 10px;
 		.typeSerifSmall;
 		&:hover {
 			background: none;
@@ -46,13 +51,13 @@
 		}
 	}
 	.menu-item {
-		@media (min-device-width: 1025px) {
+		@media (min-width: 1025px) {
 			&:last-child {
 				a {
 					.btn;
 					.btn-blue;
 					.typeSerifSmall;
-					margin: 8px 0 0 8px;
+					margin: 0 0 0 8px;
 					width: 90px;
 				}
 			}
@@ -65,7 +70,6 @@
 		a {
 			color: @color-grey;
 			font-weight: bold;
-			padding: 15px 5px;
 			.typeSerifSmall;
 			&:hover {
 				background: none;
@@ -77,14 +81,14 @@
 
 // Menu button for mobile
 .fm-button {
-	border: 1px solid @abcd-red;
+	border: 1px solid @color-red;
 	height: 40px;
 	margin: 0 0 0 15px;
 	padding: 11px 0 0 0;
 	text-align: center;
 	width: 60px;
 	&:hover {
-		background-color: @abcd-red;
+		background-color: @color-red;
 		.box-shadow(inset 0 0 5px rgba(0,0,0,0.3));
 		.fm-bar{
 			background-color: white;
@@ -96,7 +100,7 @@
 	}
 
 	.fm-bar {
-		background-color: @abcd-red;
+		background-color: @color-red;
 		height: 3px;
 		margin: 0 auto;
 		width: 34px;

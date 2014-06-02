@@ -7,12 +7,24 @@ header[role='banner'] {
 	}
 }
 
+.icon-socialmedia-set-header {
+	margin: 10px 0 0 0;
+	a {
+		margin-right: 20px;
+		margin-top: 13px;
+		vertical-align: top;
+	}
+	@media(max-width: @screen-tablet) {
+		display: none;
+	}
+}
+
 .main-menus {
 	padding: 20px;
 
 	.site-header {
 		height: 45px;
-		margin: 16px 0 0 0;
+		margin: 10px 0 0 0;
 		@media (max-device-width: 1024px) {
 			// Using device width instead of Bootstrap screen size to account for RetinaDisplay iPad
 			.pull-right;

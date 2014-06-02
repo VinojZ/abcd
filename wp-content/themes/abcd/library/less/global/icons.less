@@ -5,7 +5,8 @@
 
 .icon-socialmedia-set {
 	overflow: hidden;
-	text-align: center;
+	text-align: left;
+	height: 45px;
 	a {
 		display: inline-block;
 		float: none;
@@ -13,16 +14,6 @@
 		&:last-child {
 			margin-right: 0;
 		}
-	}
-}
-.icon-socialmedia-set-header {
-	margin: 10px 0 0 0;
-	a {
-		margin-right: 20px;
-		vertical-align: top;
-	}
-	@media(max-width: @screen-tablet) {
-		display: none;
 	}
 }
 .icon-socialmedia-set-footer {
@@ -36,17 +27,19 @@
 }
 
 .icon-socialmedia {
-	height: 36px;
+	height: 16px;
+	width: 16px;
 }
 .icon-socialmedia-twitter {
-	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat 0;
-	width: 45px;
+	background: url('../img/abcd-icon-social-twitter.png') no-repeat;
+	background-size: contain;
+	width: 20px;
 }
 .icon-socialmedia-instagram {
-	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat -45px 0;
-	width: 37px;
+	background: url('../img/abcd-icon-social-instagram.png') no-repeat;
+	background-size: contain;
 }
 .icon-socialmedia-facebook {
-	background: url('../img/abcd-socialmedia-icon-sprite.png') no-repeat -82px 0;
-	width: 19px;
+	background: url('../img/abcd-icon-social-facebook.png') no-repeat;
+	background-size: contain;
 }
