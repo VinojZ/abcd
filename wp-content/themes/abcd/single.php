@@ -47,6 +47,14 @@
 			</section> <!-- end article section -->
 			
 			<footer class="post-footer">
+				<span class="article-share-title">Share this article:</span>
+				<!-- ShareThis plugin -->
+				<div class="article-share">
+					<span st_via='@theabcdcompany' st_username='@theabcdcompany' class='st_twitter_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+					<span class='st_facebook_large' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+					<span st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' class='st_linkedin_large'></span>
+					<span st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>' class='st_email_large'></span>
+				</div>
 
 				<?php the_tags('<p class="tags"><span class="tags-title">' . __("Tags","wpbootstrap") . ':</span> ', ' ', '</p>'); ?>
 				
@@ -61,13 +69,13 @@
 
 			<section class="get-started get-started-blog" id="get-started">
 				<div class="call-to-action call-to-action-solo">
-					<div class="get-started-copy">
-						<h5>Get started with ABCD today.</h5>
-						<h6>Your pathway to success begins here.</h6>
-					</div>
-					<div class="get-started-cta">
-						<a class="btn btn-red" href="#">Call to Action</a>
-					</div>
+					<div class="call-to-action-copy">
+							<h5>We want the best</h5>
+							<h6>Great people make a great company</h6>
+						</div>
+						<div class="call-to-action-btn">
+							<a class="btn btn-green" href="get-started">Join The Team</a>
+						</div>
 				</div><!-- end .cta -->
 			</section><!-- end .get-started -->
 

@@ -20,8 +20,11 @@
 		@media(max-width: @screen-desktop) {
 			background: @color-darkRed;
 			margin: 0;
-			li {
+			text-align: center;
+			&> li {
 				margin: 0;
+				float: none;
+				display: inline-block;;
 				&.active {
 					a {
 						background: @color-red;

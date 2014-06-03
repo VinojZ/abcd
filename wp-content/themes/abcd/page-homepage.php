@@ -154,9 +154,13 @@ Template Name: Homepage
 				</div><!-- end .member -->
 				<div class="call-to-action">
 					<div class="call-to-action-inner">
-						<h5>We want the best</h5>
-						<h6>Great people make a great company</h6>
-						<a class="btn btn-green" href="get-started">Join The Team</a>
+						<div class="call-to-action-copy">
+							<h5>We want the best</h5>
+							<h6>Great people make a great company</h6>
+						</div>
+						<div class="call-to-action-btn">
+							<a class="btn btn-green" href="get-started">Join The Team</a>
+						</div>
 					</div>
 				</div><!-- end .cta --> 
 			</div>              
@@ -242,9 +246,13 @@ Template Name: Homepage
 				</div>
 				<div class="call-to-action">
 					<div class="call-to-action-inner">
-						<h5>We want the best</h5>
-						<h6>Great people make a great company</h6>
-						<a class="btn btn-green" href="get-started">Join The Team</a>
+						<div class="call-to-action-copy">
+							<h5>We want the best</h5>
+							<h6>Great people make a great company</h6>
+						</div>
+						<div class="call-to-action-btn">
+							<a class="btn btn-green" href="get-started">Join The Team</a>
+						</div>
 					</div>
 				</div><!-- end .cta -->
 			</div>
@@ -332,9 +340,13 @@ Template Name: Homepage
 			<div class="container">
 				<div class="call-to-action call-to-action-solo">
 					<div class="call-to-action-inner">
-						<h5>We want the best</h5>
-						<h6>Great people make a great company</h6>
-						<a class="btn btn-blue" href="get-started">Join The Team</a>
+						<div class="call-to-action-copy">
+							<h5>We want the best</h5>
+							<h6>Great people make a great company</h6>
+						</div>
+						<div class="call-to-action-btn">
+							<a class="btn btn-blue" href="get-started">Join The Team</a>
+						</div>
 					</div>
 				</div><!-- end .cta -->
 			</div>

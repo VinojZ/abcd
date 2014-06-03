@@ -17,7 +17,8 @@ header[role='banner'] {
 }
 
 .site-header {
-	.make-xs-column(2);
+	.make-xs-column(3);
+	.make-lg-column(2);
 	@media(max-width: @screen-md) {
 		.pull-right;
 		a {
@@ -49,35 +50,30 @@ header[role='banner'] {
 	.make-md-column(4);
 }
 
-
-.call-to-action {
-	.make-xs-column(12);
-	.make-md-column(12);
-}
-
 .icon-socialmedia-set-header {
 	.make-lg-column(3);
 	@media(max-width: @screen-lg) {
 		display: none;
 	}
 }
-
 .icon-socialmedia-set-footer {
 	.make-xs-column(12);
 }
 
+.call-to-action {
+	.make-xs-column(12);
+}
+.call-to-action-copy {
+	.make-xs-column(12);
+	.make-md-column-offset(3);
+	.make-md-column(4);
+}
+.call-to-action-btn {
+	.make-xs-column(12);
+	.make-md-column(3);
+}
 .get-started {
 	.make-row;
-
-	.get-started-copy {
-		.make-xs-column(12);
-		.make-lg-column-offset(3);
-		.make-lg-column(4);
-	}
-	.get-started-cta {
-		.make-xs-column(12);
-		.make-lg-column(3);
-	}
 }
 
 // Company Culture
