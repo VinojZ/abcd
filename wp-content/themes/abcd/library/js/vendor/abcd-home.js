@@ -12,6 +12,14 @@
 		$('.tab-content').removeClass().addClass('row');
 	}
 
+	// Reset menu on click -- needed because links are 
+	// going to in-page as opposed to refreshing page
+	
+	$('header .menu a').click(function() { 
+		$('.fm-inner').css('left','0');
+		$('.fm-offcanvas').css('left', '-70%');
+	});
+
 	// Scrolling 
 
 	$('a[href*=#]:not([href=#])').click(function() {
