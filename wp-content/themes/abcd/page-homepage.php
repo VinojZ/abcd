@@ -45,9 +45,9 @@ Template Name: Homepage
 					<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 				</div>
 				<div class="icon-socialmedia-set icon-socialmedia-set-header">
-					<a href="#"><i class="icon icon-socialmedia icon-socialmedia-twitter">Twitter</i></a>
-					<a href="#"><i class="icon icon-socialmedia icon-socialmedia-instagram">Instagram</i></a>
-					<a href="#"><i class="icon icon-socialmedia icon-socialmedia-facebook">Facebook</i></a>
+					<a href="http://www.twitter.com/theabcdcompany" target="_blank"><i class="icon icon-socialmedia icon-socialmedia-twitter">Twitter</i></a>
+					<a href="http://www.instagram.com/theabcdcompany" target="_blank"><i class="icon icon-socialmedia icon-socialmedia-instagram">Instagram</i></a>
+					<a href="http://www.facebook.com/theabcdcompany" target="_blank"><i class="icon icon-socialmedia icon-socialmedia-facebook">Facebook</i></a>
 				</div>
 				<div class="menu">
 					<?php wp_bootstrap_main_nav(); // Adjust using Menus in Wordpress Admin ?>
