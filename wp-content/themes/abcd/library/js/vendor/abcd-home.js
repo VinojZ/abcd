@@ -14,11 +14,15 @@
 
 	// Reset menu on click -- needed because links are 
 	// going to in-page as opposed to refreshing page
-	
-	$('header .menu a').click(function() { 
-		$('.fm-inner').css('left','0');
-		$('.fm-offcanvas').css('left', '-70%');
-	});
+	// Also added media query because this should not affect
+	// navigation when in large screen mode
+
+	if (screen.width < 1025) {
+		$('header .menu a').click(function() { 
+			$('.fm-inner').css('left','0');
+			$('.fm-offcanvas').css('left', '-70%');
+		});
+	}
 
 	// Scrolling 
 
