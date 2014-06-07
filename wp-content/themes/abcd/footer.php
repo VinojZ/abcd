@@ -60,8 +60,8 @@
   		
   		<!-- ShareThis -->
   		<script charset="utf-8" type="text/javascript">var switchTo5x=true;</script>
-		<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-		<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"e8b4d0ff-e7c2-42a2-a2e8-564bb3888ba0","doNotCopy":true,"hashAddressBar":false,"doNotHash":true});var st_type="wordpress3.9.1";</script>
+  		<script charset="utf-8" type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+  		<script charset="utf-8" type="text/javascript">stLight.options({"publisher":"e8b4d0ff-e7c2-42a2-a2e8-564bb3888ba0","doNotCopy":true,"hashAddressBar":false,"doNotHash":true});var st_type="wordpress3.9.1";</script>
   		
 
   		<!-- Google Analytics Account -->
