@@ -24,7 +24,7 @@
 							</div>
 							
 							<div class="latest-tweet">
-								<a class="twitter-timeline" href="https://twitter.com/tgChrisPorter" data-widget-id="472260620625010688" data-tweet-limit="1">Tweets by @tgChrisPorter</a>
+								<a class="twitter-timeline" href="https://twitter.com/TheABCDCompany" data-widget-id="478743885942759424" data-tweet-limit="1">Tweets by @TheABCDCompany</a>
 								<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 							</div>
 
