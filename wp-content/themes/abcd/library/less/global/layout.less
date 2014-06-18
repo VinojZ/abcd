@@ -18,12 +18,19 @@ header[role='banner'] {
 
 .site-header {
 	.make-xs-column(3);
-	.make-lg-column(2);
+	.make-md-column(2);
 	@media(max-width: @screen-md) {
 		.pull-right;
 		a {
 			.pull-right;
 		}
+	}
+}
+
+.icon-socialmedia-set-header {
+	.make-md-column(2);
+	@media(max-width: @screen-md) {
+		display: none;
 	}
 }
 
@@ -34,6 +41,12 @@ header[role='banner'] {
 
 .fm-lg {
 	.make-lg-column(7);
+	@media(min-width: @screen-md) {
+		left: 0 !important;
+	}
+	@media(max-width: @screen-md) {
+		display: none;
+	}
 }
 
 // ---- HOMEPAGE ---------------/
@@ -48,10 +61,6 @@ header[role='banner'] {
 .unit {
 	.make-xs-column(12);
 	.make-md-column(4);
-}
-
-.icon-socialmedia-set-header {
-	.make-md-column(3);
 }
 
 .icon-socialmedia-set-footer {
